@@ -3,14 +3,14 @@
 > 🚀 Exploring Advanced Strategies and Solutions in Supply Chain Management
 
 ## Course Information
-- **Course Name:** Advanced Supply Chain Management
-- **Course Code:** SCM101
-- **Course Instructor:** Dr. A. Patel
+- **Course Name:** Algorithmic Problem Solving
+- **Course Code:** 23ECSE309
+- **Course Instructor:** Prakash Hegade
 
 ## Personal Information
-- **Name:** [Your Name]
-- **ID:** [Your ID]
-- **University:** [Your University]
+- **Name:** Sameer M Nadaf
+- **USN:** 01FE21BCI352
+- **University:** KLE Technological University, Hubli
 
 ## Table of Contents
 - [📖 Introduction](#introduction)
