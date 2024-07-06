@@ -24,7 +24,7 @@ Welcome to my portfolio, where I showcase my learnings and insights into Supply 
 
 ## Why Supply Chain Management?
 
-<img align="right" src="https://example.com/supply-chain-image.jpg" width="180">
+<img align="right" src="https://cdn.ttgtmedia.com/rms/onlineImages/erp-supply_chain_management.png" width="180">
 
 Supply Chain Management fascinates me due to its critical role in ensuring the smooth flow of goods and services from suppliers to customers. The complexity of managing and optimizing supply chains, coupled with the impact on business efficiency and customer satisfaction, drives my passion for this field. My goal is to leverage advanced SCM strategies to enhance operational performance and drive innovation.
 
