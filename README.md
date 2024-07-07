@@ -130,6 +130,221 @@ Balancing sustainability goals with cost and operational efficiency. Implementin
   - **Sliding Window**: Optimizes the use of resources and reduces waste.
   - **Copy on Write**: Ensures efficient data management and reduces resource duplication.
 
+### 7. 🚀 **Warehouse Management System Implementation**
+
+#### USE CASE:
+Developing and implementing a Warehouse Management System (WMS) to streamline warehouse operations, improve inventory accuracy, and enhance order fulfillment.
+
+#### CHALLENGES:
+Ensuring seamless integration with existing systems. Training staff to use the new system effectively. Maintaining data accuracy and real-time visibility of inventory.
+
+#### STRATEGIES USED:
+- **AVL Trees**: For efficient database indexing and retrieval.
+- **Dynamic Programming**: 
+  - **Stolen Value Problem**: Optimizes storage space and resource allocation.
+- **Graph Algorithms**: 
+  - **DFS and BFS**: For efficient pathfinding and order picking.
+
+### 8. 📊 **Sales and Operations Planning (S&OP)**
+
+#### USE CASE:
+Implementing S&OP processes to align production and distribution with sales forecasts, ensuring optimal balance between supply and demand.
+
+#### CHALLENGES:
+Achieving cross-functional collaboration. Balancing supply with fluctuating demand. Ensuring data accuracy and timely updates.
+
+#### STRATEGIES USED:
+- **Time Series Analysis**: For accurate demand forecasting.
+- **Pascal's Triangle**: For combinatorial analysis in decision-making.
+- **Scenario Planning**: For preparing multiple operational scenarios.
+
+### 9. 🏭 **Manufacturing Resource Planning (MRP)**
+
+#### USE CASE:
+Optimizing manufacturing resources and scheduling to ensure timely production while minimizing costs and maximizing efficiency.
+
+#### CHALLENGES:
+Balancing inventory levels with production schedules. Minimizing production downtime. Integrating MRP with other supply chain functions.
+
+#### STRATEGIES USED:
+- **Dynamic Programming**:
+  - **Rod Cutting Max Product**: For optimizing resource utilization.
+- **Heap Implementation**: For efficient scheduling and priority management.
+- **Binomial Coefficients**: For production planning and lot sizing.
+
+### 10. 💡 **Innovation and Technology Adoption**
+
+#### USE CASE:
+Evaluating and adopting new technologies like IoT, AI, and blockchain to enhance supply chain visibility, efficiency, and security.
+
+#### CHALLENGES:
+Assessing the ROI of new technologies. Ensuring smooth integration with existing systems. Training employees to use new technologies effectively.
+
+#### STRATEGIES USED:
+- **A* Search**:
+  - **Best First Search**: For exploring optimal technology solutions.
+  - **A* with Priority Queue**: For project prioritization and resource allocation.
+- **Dynamic Programming**: 
+  - **Edit Distance Problem**: For comparing and selecting the best technology options.
+
+### 11. 💻 **E-Commerce Supply Chain Management**
+
+#### USE CASE:
+Managing supply chain operations for e-commerce businesses, ensuring efficient order processing, inventory management, and delivery.
+
+#### CHALLENGES:
+Handling high order volumes and returns. Ensuring fast and accurate order fulfillment. Managing multi-channel inventory.
+
+#### STRATEGIES USED:
+- **Dynamic Programming**: 
+  - **Minimum Number of Jumps**: For optimizing delivery routes.
+- **Heap Implementation**: For priority management in order processing.
+- **Graph Algorithms**: 
+  - **Kruskal's Implementation**: For network optimization and cost reduction.
+
+### 12. 🌐 **Global Supply Chain Management**
+
+#### USE CASE:
+Coordinating supply chain activities across multiple countries, managing logistics, customs, and regulatory compliance.
+
+#### CHALLENGES:
+Handling diverse regulations and trade policies. Managing long lead times and transportation costs. Ensuring supply chain resilience.
+
+#### STRATEGIES USED:
+- **Dynamic Programming**: 
+  - **Ways to Reach a Number**: For planning and optimizing global supply routes.
+- **Graph Algorithms**: 
+  - **Union-Find Basic**: For managing complex international logistics networks.
+- **Query Range Problems**: 
+  - **Look Up Table**: For efficient data retrieval and compliance checks.
+
+### 13. 📡 **Real-Time Supply Chain Monitoring**
+
+#### USE CASE:
+Implementing IoT and sensor technologies to monitor supply chain activities in real-time, enhancing visibility and responsiveness.
+
+#### CHALLENGES:
+Ensuring data accuracy and real-time updates. Integrating IoT with existing systems. Managing large volumes of data.
+
+#### STRATEGIES USED:
+- **A* Search**:
+  - **A* without Closed List**: For real-time monitoring and decision-making.
+- **Dynamic Programming**: 
+  - **Max Value of Gifts**: For optimizing resource allocation.
+- **Tree Structures**: 
+  - **Trie and Radix Tree**: For efficient data indexing and retrieval.
+
+### 14. 🚢 **Cold Chain Management**
+
+#### USE CASE:
+Managing supply chain operations for temperature-sensitive products, ensuring quality and compliance with regulatory standards.
+
+#### CHALLENGES:
+Maintaining temperature control throughout the supply chain. Ensuring compliance with regulations. Managing high costs of cold chain logistics.
+
+#### STRATEGIES USED:
+- **Dynamic Programming**: 
+  - **Longest Common Substring**: For identifying optimal routes and schedules.
+- **Heap Implementation**: For managing priorities in cold chain logistics.
+- **Graph Algorithms**: 
+  - **Ford-Fulkerson Algorithm**: For optimizing cold storage and transportation.
+
+### 15. 🧮 **Cost Reduction and Efficiency Improvement**
+
+#### USE CASE:
+Identifying and implementing cost-saving measures to improve overall supply chain efficiency without compromising service levels.
+
+#### CHALLENGES:
+Balancing cost reduction with service quality. Identifying and eliminating inefficiencies. Ensuring continuous improvement.
+
+#### STRATEGIES USED:
+- **Dynamic Programming**: 
+  - **Rod Cutting Problem**: For optimizing resource usage and minimizing waste.
+- **Graph Algorithms**: 
+  - **Boruvka's Algorithm**: For cost-effective network design.
+- **Query Range Problems**: 
+  - **Square Root Decomposition**: For efficient data queries and analysis.
+
+### 16. 🌟 **Customer Relationship Management (CRM)**
+
+#### USE CASE:
+Enhancing customer satisfaction and loyalty by effectively managing customer interactions, feedback, and service quality.
+
+#### CHALLENGES:
+Maintaining accurate customer data. Providing timely and effective customer support. Integrating CRM with supply chain operations.
+
+#### STRATEGIES USED:
+- **Dynamic Programming**: 
+  - **Edit Distance Problem**: For comparing customer feedback and improving service quality.
+- **Tree Structures**: 
+  - **Trie and Radix Tree**: For efficient customer data management.
+- **Graph Algorithms**: 
+  - **DFS and BFS**: For analyzing customer interaction patterns.
+
+### 17. 🔍 **Supply Chain Transparency and Traceability**
+
+#### USE CASE:
+Ensuring end-to-end visibility and traceability of products throughout the supply chain, from raw materials to finished goods.
+
+#### CHALLENGES:
+Implementing traceability systems across multiple supply chain stages. Ensuring data accuracy and integrity. Complying with regulatory requirements.
+
+#### STRATEGIES USED:
+- **A* Search**:
+  - **A* with Closed List**: For ensuring complete traceability and data integrity.
+- **Dynamic Programming**: 
+  - **Dice Combinations I**: For tracking product batches and lots.
+- **Tree Structures**: 
+  - **B and B+ Tree**: For efficient data storage and retrieval.
+
+### 18. 📦 **Reverse Logistics**
+
+#### USE CASE:
+Managing the return and disposal of products, ensuring efficient reverse logistics processes and minimizing environmental impact.
+
+#### CHALLENGES:
+Handling high volumes of returns. Ensuring cost-effective reverse logistics operations. Complying with environmental regulations.
+
+#### STRATEGIES USED:
+- **Dynamic Programming**: 
+  - **Subset Sum Problem**: For optimizing reverse logistics processes.
+- **Graph Algorithms**: 
+  - **Kruskal's Implementation**: For designing efficient reverse logistics networks.
+- **Query Range Problems**: 
+  - **Segment Trees**: For efficient management of returned product data.
+
+### 19. 🏗️ **Capacity Planning**
+
+#### USE CASE:
+Ensuring that supply chain operations have the necessary capacity to meet demand, avoiding overcapacity or undercapacity issues.
+
+#### CHALLENGES:
+Balancing capacity with fluctuating demand. Planning for future capacity needs. Integrating capacity planning with other supply chain functions.
+
+#### STRATEGIES USED:
+- **Dynamic Programming**: 
+  - **Longest Common Subsequence**: For matching capacity with demand patterns.
+- **Math Algorithms**: 
+  - **Catalan Numbers**: For combinatorial capacity planning.
+- **Tree Structures**: 
+  - **AVL Trees**: For efficient capacity data management.
+
+### 20. 🌱 **Sustainable Packaging**
+
+#### USE CASE:
+Implementing sustainable packaging solutions to reduce environmental impact and comply with regulatory requirements.
+
+#### CHALLENGES:
+Balancing sustainability with cost and operational efficiency. Ensuring packaging quality and performance. Complying with environmental regulations.
+
+#### STRATEGIES USED:
+- **Dynamic Programming**: 
+  - **Rod Cutting Problem**: For optimizing packaging material usage.
+- **Tree Structures**: 
+  - **Heap Implementation**: For managing packaging priorities and schedules.
+- **Principles**: 
+  - **Sliding Window**: For reducing packaging waste and optimizing usage.
+
 ## References
 
 [1] J. H. Stock and D. J. Lambert, *Strategic Logistics Management*, McGraw-Hill Education, 2001.
@@ -171,4 +386,3 @@ Balancing sustainability goals with cost and operational efficiency. Implementin
 [19] S. Chopra and P. Meindl, *Supply Chain Management: Strategy, Planning, and Operation*, Pearson, 2015.
 
 [20] A. Harrison and R. van Hoek, *Logistics Management and Strategy: Competing through the Supply Chain*, FT Press, 2011.
-
