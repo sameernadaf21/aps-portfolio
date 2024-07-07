@@ -15,6 +15,7 @@
 ## Table of Contents
 - [📖 Introduction](#introduction)
 - [🌟 Why Supply Chain Management?](#why-supply-chain-management)
+- [📚 Literature Survey on Supply Chain Management](#literature-survey-on-supply-chain-management)
 - [🎯 Objective](#objective)
 - [💼 Use Cases](#use-cases)
 - [📜 References](#references)
