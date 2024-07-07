@@ -28,6 +28,59 @@ Welcome to my portfolio, where I showcase my learnings and insights into Supply 
 <img align="right" src="https://cdn.ttgtmedia.com/rms/onlineImages/erp-supply_chain_management.png" width="180">
 
 Supply Chain Management fascinates me due to its critical role in ensuring the smooth flow of goods and services from suppliers to customers. The complexity of managing and optimizing supply chains, coupled with the impact on business efficiency and customer satisfaction, drives my passion for this field. My goal is to leverage advanced SCM strategies to enhance operational performance and drive innovation.
+## Literature Survey on Supply Chain Management
+
+### Introduction
+Supply chain management (SCM) is the active management of supply chain activities to maximize customer value and achieve a sustainable competitive advantage. It involves the design, planning, execution, control, and monitoring of supply chain activities with the objective of creating net value, building a competitive infrastructure, leveraging worldwide logistics, synchronizing supply with demand, and measuring performance globally.
+
+### Key Themes in Supply Chain Management
+
+#### Globalization and Supply Chains
+
+- *Trend:* The expansion of global supply chains to leverage cost advantages and tap into new markets.
+- *Statistics:* According to the DHL Global Connectedness Index, global trade, capital, information, and people flows are at an all-time high, with global trade reaching over $19 trillion in 2023.
+- *Reference:* DHL Global Connectedness Index 2023.
+#### Technology and Digital Transformation
+
+- *Trend:* The integration of advanced technologies such as the Internet of Things (IoT), artificial intelligence (AI), and blockchain in supply chain operations.
+- *Statistics:* Gartner reports that 50% of global product-centric enterprises will have invested in real-time transportation visibility platforms by 2024.
+- *Reference:* Gartner, "Predicts 2023: Supply Chain Technology," 2023.
+
+#### Sustainability and Green Supply Chains
+
+- *Trend:* Increasing emphasis on sustainability and environmentally friendly practices within supply chains.
+- *Statistics:* The Carbon Disclosure Project (CDP) found that supply chains account for up to 5.5 times more emissions than a company's direct operations.
+- *Reference:* Carbon Disclosure Project, "Supply Chain Report," 2023.
+
+#### Risk Management and Resilience
+
+- *Trend:* Focus on building resilient supply chains that can withstand disruptions.
+- *Statistics:* A McKinsey report highlights that supply chain disruptions cost companies, on average, 45% of one year’s profits over the course of a decade.
+- *Reference:* McKinsey & Company, "Risk, resilience, and rebalancing in global value chains," 2023.
+#### Data Analytics and Supply Chain Visibility
+
+- *Trend:* Leveraging big data and analytics to enhance supply chain visibility and decision-making.
+- *Statistics:* According to a survey by Deloitte, 79% of companies with high-performing supply chains report revenue growth significantly above the industry average.
+- *Reference:* Deloitte, "The path to supply chain agility," 2023.
+
+### Significant Developments and Innovations
+
+#### Blockchain for Transparency
+
+- *Development:* Use of blockchain technology to enhance transparency and traceability in supply chains.
+- *Example:* Walmart and IBM's Food Trust blockchain initiative has significantly reduced the time it takes to trace the origin of food from days to seconds.
+- *Reference:* Walmart, IBM Food Trust Case Study, 2023.
+
+#### AI and Machine Learning
+
+- *Development:* Implementation of AI and machine learning for demand forecasting, inventory management, and predictive maintenance.
+- *Example:* Amazon uses machine learning algorithms to optimize its vast logistics network, resulting in a 25% reduction in fulfillment costs.
+- *Reference:* Amazon, "2023 Annual Report," 2023.
+#### IoT for Real-time Monitoring
+
+- *Development:* Deployment of IoT devices for real-time monitoring of goods, enhancing supply chain visibility.
+- *Example:* Maersk's Remote Container Management system uses IoT to monitor the condition of refrigerated containers in transit.
+- *Reference:* Maersk, "Remote Container Management," 2023.
 
 ## Objective
 The main goal of this portfolio is to illustrate my understanding and application of SCM principles to address real-world challenges and optimize supply chain operations.
