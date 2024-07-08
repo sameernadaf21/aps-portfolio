@@ -212,14 +212,20 @@ Managing supplier relationships entails reviewing supplier performance, negotiat
 
 3. **Mathematical Algorithms**:
    - **Fermat's Little Theorem**:
+  
+     <img align="center" src="./images/14.png" width="280">
      - **Description**: This theorem is used in number theory and has applications in cryptography, providing secure communication channels.
      - **Application**: In supplier relationship management, cryptographic techniques based on Fermat's Little Theorem can secure sensitive communications, such as contract negotiations and performance data exchanges, ensuring confidentiality and integrity.
      - **Benefits**: Enhances the security of communications with suppliers, protecting sensitive information from unauthorized access.
    - **Catalan Numbers**:
+  
+     <img align="center" src="./images/15.png" width="280">
      - **Description**: Catalan numbers are a sequence of natural numbers that have applications in combinatorial mathematics.
      - **Application**: These numbers can be used to solve combinatorial optimization problems related to supplier selection and scheduling. For example, they can help determine the optimal combination of suppliers to meet varying demand scenarios.
      - **Benefits**: Improves decision-making in supplier selection and resource allocation, leading to a more efficient and resilient supply chain.
    - **Pascal's Triangle and Fibonacci Series**:
+  
+     <img align="center" src="./images/16.png" width="280">
      - **Description**: Pascal's Triangle is a triangular array of binomial coefficients, while the Fibonacci series is a sequence where each number is the sum of the two preceding ones.
      - **Application**: These mathematical constructs can be applied to financial forecasting and inventory replenishment cycles. For instance, Fibonacci series might be used to model demand cycles, aiding in predicting future inventory needs.
      - **Benefits**: Enhances financial and inventory planning, ensuring that resources are allocated efficiently and inventory levels are optimized to meet demand.
