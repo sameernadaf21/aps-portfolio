@@ -102,7 +102,7 @@ Predicting demand accurately in the face of fluctuating market conditions. Balan
   - *Subset Sum Problem*: Helps determine optimal inventory levels.[code](./codes/1.md)
   - *Coin Combinations*: Used for managing currency in inventory systems.[code](./codes/2.md)
   - *Rod Cutting Problem*: Optimizes stock lengths in manufacturing.[code](./codes/3.md)
-  - *Longest Common Subsequence*: Helps in identifying common patterns in demand sequences.
+  - *Longest Common Subsequence*: Helps in identifying common patterns in demand sequences.[code](./codes/4.md)
 
 ### 2. 🚚 *Logistics and Transportation Optimization*
 
@@ -113,11 +113,11 @@ Optimizing logistics and transportation involves managing routes, reducing costs
 Balancing cost reduction with service level improvements. Handling dynamic changes in routes and transportation requirements. Integrating logistics optimization with real-time data for adaptive decision-making.
 
 #### STRATEGIES USED:
-- *Dijkstra's Shortest Path Algorithm*: Finds the shortest route for transportation.
-- *Vehicle Routing Problem (VRP)*: Optimizes vehicle routes for efficient delivery.
+- *Dijkstra's Shortest Path Algorithm*: Finds the shortest route for transportation.[code](./codes/5.md)
+- *Vehicle Routing Problem (VRP)*: Optimizes vehicle routes for efficient delivery.[code](./codes/6.md)
 - *Tree Structures*: 
-  - *AVL Trees and Red Black Trees*: Efficient data storage and retrieval for route optimization.
-  - *Heap Implementation*: Priority queue for managing delivery schedules.)
+  - *AVL Trees and Red Black Trees*: Efficient data storage and retrieval for route optimization.[code](./codes/7.md)
+  - *Heap Implementation*: Priority queue for managing delivery schedules.)[code](./codes/8.md)
   - *KD Tree*: Spatial search and nearest neighbor queries for route planning.
 
 ### 3. 🔄 *Supplier Relationship Management*
