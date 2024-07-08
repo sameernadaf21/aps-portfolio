@@ -38,7 +38,7 @@ Supply chain management (SCM) is the active management of supply chain activitie
 ### Key Themes in Supply Chain Management
 
 #### Globalization and Supply Chains
-
+<img align="right" src="https://cdn.ttgtmedia.com/rms/onlineImages/erp-supply_chain_management.png" width="180">
 - *Trend:* The extension of global supply networks to harness cost advantages and access into new markets.
 - *Statistics:* According to the DHL Global Connectedness Index, global trade, capital, information, and people flows are at an all-time high, with global trade reaching over $19 trillion in 2023.
 - *Reference:* DHL Global Connectedness Index 2023.
