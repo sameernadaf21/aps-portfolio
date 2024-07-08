@@ -266,11 +266,11 @@ Handling diverse regulations and trade policies. Managing long lead times and tr
 
 #### STRATEGIES USED:
 - *Dynamic Programming*: 
-  - *Ways to Reach a Number*: For planning and optimizing global supply routes.
+  - *Ways to Reach a Number*: For planning and optimizing global supply routes.[code](./codes/29.md)
 - *Graph Algorithms*: 
-  - *Union-Find Basic*: For managing complex international logistics networks.
+  - *Union-Find Basic*: For managing complex international logistics networks.[code](./codes/16.md)
 - *Query Range Problems*: 
-  - *Look Up Table*: For efficient data retrieval and compliance checks.
+  - *Look Up Table*: For efficient data retrieval and compliance checks.[code](./codes/30.md)
 
 ### 13. 📡 *Real-Time Supply Chain Monitoring*
 
@@ -282,11 +282,11 @@ Ensuring data accuracy and real-time updates. Integrating IoT with existing syst
 
 #### STRATEGIES USED:
 - *A Search**:
-  - *A without Closed List**: For real-time monitoring and decision-making.
+  - *A without Closed List**: For real-time monitoring and decision-making.[code](./codes/31.md)
 - *Dynamic Programming*: 
-  - *Max Value of Gifts*: For optimizing resource allocation.
+  - *Max Value of Gifts*: For optimizing resource allocation.[code](./codes/32.md)
 - *Tree Structures*: 
-  - *Trie and Radix Tree*: For efficient data indexing and retrieval.
+  - *Trie and Radix Tree*: For efficient data indexing and retrieval.[code](./codes/33.md)
 
 ### 14. 🚢 *Cold Chain Management*
 
@@ -298,10 +298,10 @@ Maintaining temperature control throughout the supply chain. Ensuring compliance
 
 #### STRATEGIES USED:
 - *Dynamic Programming*: 
-  - *Longest Common Substring*: For identifying optimal routes and schedules.
+  - *Longest Common Substring*: For identifying optimal routes and schedules.[code](./codes/34.md)
 - *Heap Implementation*: For managing priorities in cold chain logistics.[code](./codes/8.md)
 - *Graph Algorithms*: 
-  - *Ford-Fulkerson Algorithm*: For optimizing cold storage and transportation.
+  - *Ford-Fulkerson Algorithm*: For optimizing cold storage and transportation.[code](./codes/15.md)
 
 ### 15. 🧮 *Cost Reduction and Efficiency Improvement*
 
