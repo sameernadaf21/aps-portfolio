@@ -99,10 +99,10 @@ Predicting demand accurately in the face of fluctuating market conditions. Balan
 - *Time Series Analysis*: Predicts future demand based on historical data.
 - *Regression Analysis*: Analyzes relationships between variables to forecast demand.
 - *Dynamic Programming*: 
-  - *Subset Sum Problem*: Helps determine optimal inventory levels.[Code](./subset_sum_problem.md)
-  - *Coin Combinations*: Used for managing currency in inventory systems.[Code](./coin_comb.md)
-  - *Rod Cutting Problem*: Optimizes stock lengths in manufacturing.[Code](./rod_cutting.md)
-  - *Longest Common Subsequence*: Helps in identifying common patterns in demand sequences.[Code](./longest_common.md)
+  - *Subset Sum Problem*: Helps determine optimal inventory levels.
+  - *Coin Combinations*: Used for managing currency in inventory systems.
+  - *Rod Cutting Problem*: Optimizes stock lengths in manufacturing.
+  - *Longest Common Subsequence*: Helps in identifying common patterns in demand sequences.
 
 ### 2. 🚚 *Logistics and Transportation Optimization*
 
@@ -113,11 +113,11 @@ Optimizing logistics and transportation involves managing routes, reducing costs
 Balancing cost reduction with service level improvements. Handling dynamic changes in routes and transportation requirements. Integrating logistics optimization with real-time data for adaptive decision-making.
 
 #### STRATEGIES USED:
-- *Dijkstra's Shortest Path Algorithm*: Finds the shortest route for transportation.[Code](./Dijkstra.md)
-- *Vehicle Routing Problem (VRP)*: Optimizes vehicle routes for efficient delivery.[Code](./vrp.md)
+- *Dijkstra's Shortest Path Algorithm*: Finds the shortest route for transportation.
+- *Vehicle Routing Problem (VRP)*: Optimizes vehicle routes for efficient delivery.
 - *Tree Structures*: 
-  - *AVL Trees and Red Black Trees*: Efficient data storage and retrieval for route optimization.[Code](./avl_red_black.md)
-  - *Heap Implementation*: Priority queue for managing delivery schedules.[Code](./heap.md)
+  - *AVL Trees and Red Black Trees*: Efficient data storage and retrieval for route optimization.
+  - *Heap Implementation*: Priority queue for managing delivery schedules.)
   - *KD Tree*: Spatial search and nearest neighbor queries for route planning.
 
 ### 3. 🔄 *Supplier Relationship Management*
@@ -132,9 +132,9 @@ Maintaining strong relationships while negotiating favorable terms. Evaluating a
 - *Supplier Scorecards*: Evaluates supplier performance based on key metrics.
 - *Contract Management Systems*: Manages and tracks contract obligations and compliance.
 - *Math Algorithms*:
-  - *Fermat's Little Theorem*: Used in cryptographic applications for secure communication with suppliers.[Code](./Fermat.md)
-  - *Catalan Numbers*: Helps in combinatorial optimization problems related to supplier selection.[Code](./catalan.md)
-  - *Pascal's Triangle and Fibonacci Series*: Used for financial forecasting and inventory replenishment cycles.[Code](./pascal.md)
+  - *Fermat's Little Theorem*: Used in cryptographic applications for secure communication with suppliers.
+  - *Catalan Numbers*: Helps in combinatorial optimization problems related to supplier selection.
+  - *Pascal's Triangle and Fibonacci Series*: Used for financial forecasting and inventory replenishment cycles.
 
 ### 4. 📈 *Supply Chain Analytics*
 
