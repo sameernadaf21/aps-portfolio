@@ -1,0 +1,112 @@
+### Heap
+
+**Heap** is a complete binary tree where each node follows the heap property. In a max-heap, each parent node is greater than or equal to its child nodes, whereas, in a min-heap, each parent node is less than or equal to its child nodes. Heaps are commonly used to implement priority queues.
+
+#### C++ Code
+
+```cpp
+#include <iostream>
+#include <vector>
+using namespace std;
+
+class MaxHeap {
+    vector<int> heap;
+
+    // Utility function to heapify the tree rooted at index i
+    void heapify(int i) {
+        int largest = i;
+        int left = 2 * i + 1;
+        int right = 2 * i + 2;
+
+        if (left < heap.size() && heap[left] > heap[largest])
+            largest = left;
+
+        if (right < heap.size() && heap[right] > heap[largest])
+            largest = right;
+
+        if (largest != i) {
+            swap(heap[i], heap[largest]);
+            heapify(largest);
+        }
+    }
+
+public:
+    // Function to insert a new key into the heap
+    void insert(int key) {
+        heap.push_back(key);
+        int i = heap.size() - 1;
+
+        // Fix the max heap property if it's violated
+        while (i != 0 && heap[(i - 1) / 2] < heap[i]) {
+            swap(heap[i], heap[(i - 1) / 2]);
+            i = (i - 1) / 2;
+        }
+    }
+
+    // Function to extract the maximum element (root) from the heap
+    int extractMax() {
+        if (heap.size() == 0)
+            return INT_MIN;
+
+        if (heap.size() == 1) {
+            int root = heap[0];
+            heap.pop_back();
+            return root;
+        }
+
+        int root = heap[0];
+        heap[0] = heap.back();
+        heap.pop_back();
+        heapify(0);
+
+        return root;
+    }
+
+    // Function to get the maximum element (root) from the heap
+    int getMax() {
+        return heap.empty() ? INT_MIN : heap[0];
+    }
+
+    // Function to print the heap
+    void printHeap() {
+        for (int i : heap) {
+            cout << i << " ";
+        }
+        cout << endl;
+    }
+};
+
+int main() {
+    MaxHeap h;
+    h.insert(10);
+    h.insert(20);
+    h.insert(15);
+    h.insert(30);
+    h.insert(25);
+
+    cout << "Max Heap: ";
+    h.printHeap();
+
+    cout << "Extracted Max: " << h.extractMax() << endl;
+    cout << "Max Heap after extraction: ";
+    h.printHeap();
+
+    return 0;
+}
+```
+
+#### Time and Space Complexity
+
+```markdown
+### Time and Space Complexity
+
+| Operation         | Time Complexity   | Space Complexity  |
+|-------------------|-------------------|-------------------|
+| Insertion         | O(log n)          | O(n)              |
+| Extraction        | O(log n)          | O(n)              |
+| Heapify           | O(log n)          | O(n)              |
+
+Where:
+- **n**: Number of elements in the heap.
+```
+

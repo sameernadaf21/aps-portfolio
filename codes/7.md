@@ -1,0 +1,322 @@
+### AVL Tree
+
+**AVL Tree** is a self-balancing binary search tree where the difference in heights between the left and right subtrees of any node is at most one. This balance is maintained through rotations.
+
+#### C++ Code
+
+```cpp
+#include <iostream>
+using namespace std;
+
+// Definition of a node in the AVL Tree
+struct Node {
+    int key;
+    Node *left, *right;
+    int height;
+    
+    Node(int key) : key(key), left(nullptr), right(nullptr), height(1) {}
+};
+
+// Utility function to get the height of the tree
+int height(Node *N) {
+    return (N == nullptr) ? 0 : N->height;
+}
+
+// Utility function to right rotate subtree rooted with y
+Node* rightRotate(Node *y) {
+    Node *x = y->left;
+    Node *T2 = x->right;
+
+    // Perform rotation
+    x->right = y;
+    y->left = T2;
+
+    // Update heights
+    y->height = max(height(y->left), height(y->right)) + 1;
+    x->height = max(height(x->left), height(x->right)) + 1;
+
+    // Return new root
+    return x;
+}
+
+// Utility function to left rotate subtree rooted with x
+Node* leftRotate(Node *x) {
+    Node *y = x->right;
+    Node *T2 = y->left;
+
+    // Perform rotation
+    y->left = x;
+    x->right = T2;
+
+    // Update heights
+    x->height = max(height(x->left), height(x->right)) + 1;
+    y->height = max(height(y->left), height(y->right)) + 1;
+
+    // Return new root
+    return y;
+}
+
+// Get balance factor of node N
+int getBalance(Node *N) {
+    return (N == nullptr) ? 0 : height(N->left) - height(N->right);
+}
+
+// Insert a node into the AVL Tree
+Node* insert(Node* node, int key) {
+    if (node == nullptr) return new Node(key);
+
+    if (key < node->key)
+        node->left = insert(node->left, key);
+    else if (key > node->key)
+        node->right = insert(node->right, key);
+    else
+        return node;
+
+    node->height = 1 + max(height(node->left), height(node->right));
+
+    int balance = getBalance(node);
+
+    // Left Left Case
+    if (balance > 1 && key < node->left->key)
+        return rightRotate(node);
+
+    // Right Right Case
+    if (balance < -1 && key > node->right->key)
+        return leftRotate(node);
+
+    // Left Right Case
+    if (balance > 1 && key > node->left->key) {
+        node->left = leftRotate(node->left);
+        return rightRotate(node);
+    }
+
+    // Right Left Case
+    if (balance < -1 && key < node->right->key) {
+        node->right = rightRotate(node->right);
+        return leftRotate(node);
+    }
+
+    return node;
+}
+
+// Preorder traversal of the AVL Tree
+void preOrder(Node *root) {
+    if (root != nullptr) {
+        cout << root->key << " ";
+        preOrder(root->left);
+        preOrder(root->right);
+    }
+}
+
+int main() {
+    Node* root = nullptr;
+
+    root = insert(root, 10);
+    root = insert(root, 20);
+    root = insert(root, 30);
+    root = insert(root, 40);
+    root = insert(root, 50);
+    root = insert(root, 25);
+
+    cout << "Preorder traversal of the constructed AVL tree is: ";
+    preOrder(root);
+
+    return 0;
+}
+```
+
+#### Time and Space Complexity
+
+```markdown
+### Time and Space Complexity
+
+| Operation          | Time Complexity   | Space Complexity  |
+|--------------------|-------------------|-------------------|
+| Insertion/Deletion | O(log n)          | O(n)              |
+| Search             | O(log n)          | O(n)              |
+
+Where:
+- **n**: Number of nodes in the AVL Tree.
+```
+
+### Red-Black Tree
+
+**Red-Black Tree** is a type of self-balancing binary search tree. It maintains balance by coloring nodes and ensuring certain properties to keep the tree balanced.
+
+#### C++ Code
+
+```cpp
+#include <iostream>
+using namespace std;
+
+enum Color { RED, BLACK };
+
+struct Node {
+    int data;
+    Node *left, *right, *parent;
+    Color color;
+
+    Node(int data) : data(data), left(nullptr), right(nullptr), parent(nullptr), color(RED) {}
+};
+
+// Utility function to left rotate subtree rooted with x
+void leftRotate(Node *&root, Node *x) {
+    Node *y = x->right;
+    x->right = y->left;
+    if (y->left != nullptr)
+        y->left->parent = x;
+    y->parent = x->parent;
+    if (x->parent == nullptr)
+        root = y;
+    else if (x == x->parent->left)
+        x->parent->left = y;
+    else
+        x->parent->right = y;
+    y->left = x;
+    x->parent = y;
+}
+
+// Utility function to right rotate subtree rooted with y
+void rightRotate(Node *&root, Node *y) {
+    Node *x = y->left;
+    y->left = x->right;
+    if (x->right != nullptr)
+        x->right->parent = y;
+    x->parent = y->parent;
+    if (y->parent == nullptr)
+        root = x;
+    else if (y == y->parent->left)
+        y->parent->left = x;
+    else
+        y->parent->right = x;
+    x->right = y;
+    y->parent = x;
+}
+
+// Fix violations caused by insertion
+void fixViolation(Node *&root, Node *&pt) {
+    Node *parent_pt = nullptr;
+    Node *grand_parent_pt = nullptr;
+
+    while ((pt != root) && (pt->parent->color == RED)) {
+        parent_pt = pt->parent;
+        grand_parent_pt = pt->parent->parent;
+
+        // Case: A
+        if (parent_pt == grand_parent_pt->left) {
+            Node *uncle_pt = grand_parent_pt->right;
+
+            // Case: 1
+            if (uncle_pt != nullptr && uncle_pt->color == RED) {
+                grand_parent_pt->color = RED;
+                parent_pt->color = BLACK;
+                uncle_pt->color = BLACK;
+                pt = grand_parent_pt;
+            } else {
+                // Case: 2
+                if (pt == parent_pt->right) {
+                    pt = parent_pt;
+                    leftRotate(root, pt);
+                }
+
+                // Case: 3
+                parent_pt->color = BLACK;
+                grand_parent_pt->color = RED;
+                rightRotate(root, grand_parent_pt);
+            }
+        } else {
+            Node *uncle_pt = grand_parent_pt->left;
+
+            // Case: 1
+            if ((uncle_pt != nullptr) && (uncle_pt->color == RED)) {
+                grand_parent_pt->color = RED;
+                parent_pt->color = BLACK;
+                uncle_pt->color = BLACK;
+                pt = grand_parent_pt;
+            } else {
+                // Case: 2
+                if (pt == parent_pt->left) {
+                    pt = parent_pt;
+                    rightRotate(root, pt);
+                }
+
+                // Case: 3
+                parent_pt->color = BLACK;
+                grand_parent_pt->color = RED;
+                leftRotate(root, grand_parent_pt);
+            }
+        }
+    }
+    root->color = BLACK;
+}
+
+// Insert a node into the Red-Black Tree
+void insert(Node *&root, int data) {
+    Node *pt = new Node(data);
+
+    // Perform standard BST insert
+    Node *y = nullptr;
+    Node *x = root;
+
+    while (x != nullptr) {
+        y = x;
+        if (pt->data < x->data)
+            x = x->left;
+        else
+            x = x->right;
+    }
+
+    pt->parent = y;
+    if (y == nullptr)
+        root = pt;
+    else if (pt->data < y->data)
+        y->left = pt;
+    else
+        y->right = pt;
+
+    // Fix Red-Black Tree violations
+    fixViolation(root, pt);
+}
+
+// Inorder traversal of the Red-Black Tree
+void inorderHelper(Node *root) {
+    if (root == nullptr) return;
+    inorderHelper(root->left);
+    cout << root->data << " ";
+    inorderHelper(root->right);
+}
+
+int main() {
+    Node *root = nullptr;
+
+    insert(root, 7);
+    insert(root, 3);
+    insert(root, 18);
+    insert(root, 10);
+    insert(root, 22);
+    insert(root, 8);
+    insert(root, 11);
+
+    cout << "Inorder traversal of the Red-Black Tree is: ";
+    inorderHelper(root);
+
+    return 0;
+}
+```
+
+#### Time and Space Complexity
+
+```markdown
+### Time and Space Complexity
+
+| Operation          | Time Complexity   | Space Complexity  |
+|--------------------|-------------------|-------------------|
+| Insertion/Deletion | O(log n)          | O(n)              |
+| Search             | O(log n)          | O(n)
+
+              |
+
+Where:
+- **n**: Number of nodes in the Red-Black Tree.
+```
+
