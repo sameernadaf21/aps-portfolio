@@ -1,0 +1,43 @@
+## Rod Cutting Problem Code
+
+The Rod Cutting Problem is a classic dynamic programming problem that determines the maximum profit obtainable by cutting a rod into pieces and selling them, given a price list for each piece length.
+
+### C++ Code
+
+```cpp
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+int rodCutting(vector<int>& prices, int length) {
+    vector<int> dp(length + 1, 0);
+
+    for (int i = 1; i <= length; i++) {
+        for (int j = 0; j < i; j++) {
+            dp[i] = max(dp[i], prices[j] + dp[i - j - 1]);
+        }
+    }
+
+    return dp[length];
+}
+
+int main() {
+    vector<int> prices = {1, 5, 8, 9, 10, 17, 17, 20}; // Example prices
+    int length = 8;
+    cout << "Maximum profit: " << rodCutting(prices, length);
+    return 0;
+}
+```
+
+### Time and Space Complexity
+
+| Operation          | Time Complexity   | Space Complexity  |
+|--------------------|-------------------|-------------------|
+| Initialization     | O(n * length)     | O(length)         |
+| Cutting Calculation| O(n * length)     | O(length)         |
+
+Where:
+- **n**: Number of different piece lengths (or prices).
+- **length**: Length of the rod to be cut.
+
