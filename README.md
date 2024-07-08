@@ -148,9 +148,9 @@ Handling and analyzing large volumes of supply chain data. Integrating analytics
 - *Descriptive Analytics*: Analyzes historical data to understand past performance.
 - *Predictive Analytics*: Uses statistical models and machine learning to forecast future trends.
 - *Query Range Problems*:
-  - *Fenwick Tree / BIT*: Efficient range queries and updates in inventory systems.[Code](./fenwick.md)
-  - *Segment Trees*: Used for interval queries and range minimum/maximum.[Code](./segment.md)
-  - *Kadane's Algorithm*: Identifies maximum subarray sums for financial analysis.[Code](./kadane.md)
+  - *Fenwick Tree / BIT*: Efficient range queries and updates in inventory systems.
+  - *Segment Trees*: Used for interval queries and range minimum/maximum.
+  - *Kadane's Algorithm*: Identifies maximum subarray sums for financial analysis.
 
 ### 5. 🔒 *Supply Chain Risk Management*
 
@@ -165,8 +165,8 @@ Identifying and assessing a wide range of potential risks. Developing effective 
 - *Scenario Planning*: Develops and analyzes different scenarios to prepare for potential disruptions.
 - *Graph Algorithms*:
   - *Boruvka's Algorithm*: Used for network design and minimizing connection costs.
-  - *Ford-Fulkerson Algorithm*: Manages maximum flow problems in supply chains.[Code](./Ford-Fulkerson.md)
-  - *Union-Find Algorithms*: Helps in clustering and network reliability assessments.[Code](./union-find.md)
+  - *Ford-Fulkerson Algorithm*: Manages maximum flow problems in supply chains.
+  - *Union-Find Algorithms*: Helps in clustering and network reliability assessments.
 
 ### 6. 🌍 *Sustainable Supply Chain Management*
 
@@ -180,9 +180,9 @@ Balancing sustainability goals with cost and operational efficiency. Implementin
 - *Green Logistics*: Reduces environmental impact through efficient logistics practices.
 - *Circular Economy Models*: Promotes recycling and reuse within supply chains.
 - *Principles*:
-  - *Lazy Propagation*: Used for efficient updates in logistics and inventory systems.[Code](./lazy-prop.md)
-  - *Sliding Window*: Optimizes the use of resources and reduces waste.[Code](./sliding-window.md)
-  - *Copy on Write*: Ensures efficient data management and reduces resource duplication.[Code](./copy-on-write.md)
+  - *Lazy Propagation*: Used for efficient updates in logistics and inventory systems.
+  - *Sliding Window*: Optimizes the use of resources and reduces waste.
+  - *Copy on Write*: Ensures efficient data management and reduces resource duplication.
 
 ### 7. 🚀 *Warehouse Management System Implementation*
 
