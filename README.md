@@ -312,10 +312,8 @@ Balancing cost reduction with service quality. Identifying and eliminating ineff
 #### STRATEGIES USED:
 - *Dynamic Programming*: 
   - *Rod Cutting Problem*: For optimizing resource usage and minimizing waste.
-- *Graph Algorithms*: 
-  - *Boruvka's Algorithm*: For cost-effective network design.
 - *Query Range Problems*: 
-  - *Square Root Decomposition*: For efficient data queries and analysis.
+  - *Square Root Decomposition*: For efficient data queries and analysis.[code](./codes/36.md)
 
 ### 16. 🌟 *Customer Relationship Management (CRM)*
 
@@ -342,12 +340,10 @@ Ensuring end-to-end visibility and traceability of products throughout the suppl
 Implementing traceability systems across multiple supply chain stages. Ensuring data accuracy and integrity. Complying with regulatory requirements.
 
 #### STRATEGIES USED:
-- *A Search**:
-  - *A with Closed List**: For ensuring complete traceability and data integrity.
 - *Dynamic Programming*: 
-  - *Dice Combinations I*: For tracking product batches and lots.
+  - *Dice Combinations I*: For tracking product batches and lots.[code](./codes/34.md)
 - *Tree Structures*: 
-  - *B and B+ Tree*: For efficient data storage and retrieval.
+  - *B and B+ Tree*: For efficient data storage and retrieval.[code](./codes/35.md)
 
 ### 18. 📦 *Reverse Logistics*
 
