@@ -161,11 +161,13 @@ Optimizing logistics and transportation involves controlling routes, decreasing 
    - **Benefits**: Reduces travel costs and delivery times, improving overall logistics efficiency and customer satisfaction.
 
 3. **Vehicle Routing Problem (VRP)**:
+
+   <img align="center" src="./images/11.png" width="280">
    - **Description**: VRP involves determining the optimal set of routes for a fleet of vehicles delivering to a set of locations, taking into account various constraints such as vehicle capacity and delivery time windows.
    - **Application**: Helps logistics companies plan efficient delivery routes that minimize total travel distance and time while meeting delivery constraints. For example, it can optimize the routes for a fleet of trucks delivering goods to multiple customers.
    - **Benefits**: Enhances route planning efficiency, reduces fuel consumption, lowers operational costs, and ensures timely deliveries.
 
-4. **Tree Structures**:
+5. **Tree Structures**:
    - **AVL Trees and Red-Black Trees**:
      - **Description**: These are types of self-balancing binary search trees that maintain sorted data, allowing for efficient data storage and retrieval.
      - **Application**: Used for storing and retrieving route information, ensuring quick access to route data and facilitating efficient route optimization. For instance, a logistics system can quickly find and update the best routes using these tree structures.
