@@ -169,10 +169,14 @@ Optimizing logistics and transportation involves controlling routes, decreasing 
 
 5. **Tree Structures**:
    - **AVL Trees and Red-Black Trees**:
+     
+    <img align="center" src="./images/12.png" width="280">
      - **Description**: These are types of self-balancing binary search trees that maintain sorted data, allowing for efficient data storage and retrieval.
      - **Application**: Used for storing and retrieving route information, ensuring quick access to route data and facilitating efficient route optimization. For instance, a logistics system can quickly find and update the best routes using these tree structures.
      - **Benefits**: Ensures fast and efficient access to route data, improving the responsiveness of logistics systems to dynamic changes.
    - **Heap Implementation**:
+
+   <img align="center" src="./images/13.png" width="280">
      - **Description**: Heaps are a type of tree-based data structure that can function as a priority queue, where the highest (or lowest) priority element is always at the root.
      - **Application**: Used for managing delivery schedules by prioritizing deliveries based on urgency, distance, or other criteria. For example, a delivery system can prioritize urgent deliveries by placing them higher in the heap.
      - **Benefits**: Improves the efficiency of delivery scheduling, ensuring that the most critical deliveries are handled promptly.
