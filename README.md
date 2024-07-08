@@ -29,6 +29,7 @@ Welcome to my portfolio, where I present my learnings and insights about Supply 
 <img align="right" src="https://cdn.ttgtmedia.com/rms/onlineImages/erp-supply_chain_management.png" width="180">
 
 Supply Chain Management intrigues me due to its vital function in ensuring the smooth movement of goods and services from suppliers to customers. The complexity of managing and optimizing supply chains, along with the influence on corporate efficiency and customer happiness, fuels my interest for this sector. My goal is to employ advanced SCM solutions to boost operational performance and generate innovation.
+
 ## Literature Survey on Supply Chain Management
 
 ### Introduction
@@ -60,6 +61,7 @@ Supply chain management (SCM) is the active management of supply chain activitie
 - *Trend:* Focus on establishing resilient supply chains that can survive interruptions.
 - *Statistics:* A McKinsey analysis reveals that supply chain interruptions cost organizations, on average, 45% of one year’s profits over the course of a decade.
 - *Reference:* McKinsey & Company, "Risk, resilience, and rebalancing in global value chains," 2023.
+  
 #### Data Analytics and Supply Chain Visibility
 
 - *Trend:* Leveraging big data and analytics to increase supply chain visibility and decision-making.
@@ -79,6 +81,7 @@ Supply chain management (SCM) is the active management of supply chain activitie
 - *Development:* Implementation of AI and machine learning for demand forecasting, inventory management, and predictive maintenance.
 - *Example:* Amazon uses machine learning algorithms to optimize its vast logistics network, resulting in a 25% reduction in fulfillment costs.
 - *Reference:* Amazon, "2023 Annual Report," 2023.
+  
 #### IoT for Real-time Monitoring
 
 - *Development:* Deployment of IoT devices for real-time monitoring of commodities, boosting supply chain visibility.
