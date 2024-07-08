@@ -107,10 +107,10 @@ Predicting demand accurately in the face of altering market conditions. Balancin
 - *Time Series Analysis*: Predicts future demand based on historical data.
 - *Regression Analysis*: Analyzes relationships between variables to forecast demand.
 - *Dynamic Programming*: 
-  - *Subset Sum Problem*: Helps determine optimal inventory levels.[code](./codes/1.md)
+  - *Subset Sum Problem*: Helps determine optimal inventory levels.[1][code](./codes/1.md)
   - *Coin Combinations*: Used for managing currency in inventory systems.[code](./codes/2.md)
   - *Rod Cutting Problem*: Optimizes stock lengths in manufacturing.[code](./codes/3.md)
-  - *Longest Common Subsequence*: Helps in identifying common patterns in demand sequences.[code](./codes/4.md)
+  - *Longest Common Subsequence*: Helps in identifying common patterns in demand sequences.[2][code](./codes/4.md)
 
 ### 2. 🚚 *Logistics and Transportation Optimization*
 
@@ -424,43 +424,5 @@ Balancing sustainability with cost and operational efficiency. Ensuring packagin
   - *Sliding Window*: For reducing packaging waste and optimizing usage.[code](./codes/18.md)
 
 ## References
-
-[1] J. H. Stock and D. J. Lambert, Strategic Logistics Management, McGraw-Hill Education, 2001.
-
-[2] R. B. Handfield and E. L. Nichols Jr., Introduction to Supply Chain Management, Prentice Hall, 2002.
-
-[3] M. Christopher, Logistics and Supply Chain Management, Pearson Education, 2016.
-
-[4] G. Laporte, The Vehicle Routing Problem: An Overview of Exact and Approximate Algorithms, European Journal of Operational Research, vol. 59, no. 3, pp. 345-358, 1992.
-
-[5] P. Toth and D. Vigo, The Vehicle Routing Problem, Society for Industrial and Applied Mathematics, 2002.
-
-[6] J. Holland, Adaptation in Natural and Artificial Systems, University of Michigan Press, 1975.
-
-[7] M. F. G. J. D. S. F. Jones, Managing Supplier Performance, Cambridge University Press, 2009.
-
-[8] H. J. Watson, Managing and Improving Supplier Relationships, Springer, 2015.
-
-[9] R. P. B. B. T. L. C. D. L. P. P. R. W., Risk Management in Supply Chains, Routledge, 2010.
-
-[10] J. K. Skilton and R. J. K. Smith, Data Analytics in Supply Chains, Springer, 2017.
-
-[11] T. W. Simpson, Predictive Analytics for Supply Chain Management, Wiley, 2013.
-
-[12] R. F. L. DeLurgio, Prescriptive Analytics: The Path to Improved Decision Making, Springer, 2016.
-
-[13] K. J. B. J. Thompson, Supply Chain Risk Management: A Practical Guide, Wiley, 2012.
-
-[14] K. S. J. D. S. Prather, Scenario Planning in Supply Chain Management, Cambridge University Press, 2015.
-
-[15] A. W. W. M. L. G. P. T. S., Contingency Planning for Supply Chain Disruptions, Routledge, 2018.
-
-[16] M. A. S. J. M. Cohen, Green Logistics and Sustainable Supply Chains, Springer, 2014.
-
-[17] R. W. D. N. K. C., Circular Economy in Supply Chains, Springer, 2016.
-
-[18] J. M. S. E. P. B. G. L., Sustainable Supply Chain Management: A Practical Guide, Wiley, 2018.
-
-[19] S. Chopra and P. Meindl, Supply Chain Management: Strategy, Planning, and Operation, Pearson, 2015.
-
-[20] A. Harrison and R. van Hoek, Logistics Management and Strategy: Competing through the Supply Chain, FT Press, 2011.
+[1]Z. Cao and L. Liu, “New Algorithms for Subset Sum Problem,” arXiv.org, Jul. 07, 2018. https://arxiv.org/abs/1807.02611
+[2]“A survey of longest common subsequence algorithms,” IEEE Conference Publication | IEEE Xplore, 2000. https://ieeexplore.ieee.org/document/878178
