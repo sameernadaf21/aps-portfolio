@@ -799,9 +799,6 @@ Capacity Planning involves ensuring that supply chain operations have the approp
 - [Catalan Numbers](./codes/10.md)
 - [AVL Trees](./codes/7.md)
 
-Here's an expanded version with detailed explanations for each strategy:
-
----
 
 ### 20. 🌱 *Sustainable Packaging*
 
@@ -838,9 +835,6 @@ Sustainable Packaging focuses on using eco-friendly materials and methods to min
 - [Heap Implementation](./codes/8.md)
 - [Sliding Window](./codes/18.md)
 
----
-
-This expanded version provides detailed explanations of each strategy and its application in addressing the challenges of sustainable packaging.
 
 ## References
 [1]Z. Cao and L. Liu, “New Algorithms for Subset Sum Problem,” arXiv.org, Jul. 07, 2018. https://arxiv.org/abs/1807.02611
