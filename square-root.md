@@ -1,0 +1,110 @@
+### Square Root Decomposition
+
+**Square Root Decomposition** is a technique used to optimize queries and updates in data structures. It involves dividing the data into blocks of approximately equal size and precomputing information about each block. This allows for efficient querying and updating by minimizing the number of operations needed for each query or update.
+
+#### Problem Statement
+
+Given an array, Square Root Decomposition can be used to efficiently perform queries such as range sum queries, range minimum queries, or updates on the array.
+
+#### C++ Code
+
+Here’s a C++ implementation of Square Root Decomposition for range sum queries:
+
+```cpp
+#include <iostream>
+#include <vector>
+#include <cmath>
+
+using namespace std;
+
+// Class to handle range sum queries using Square Root Decomposition
+class SqrtDecomposition {
+public:
+    SqrtDecomposition(const vector<int>& arr) : n(arr.size()), blockSize(sqrt(arr.size())) {
+        blocks.resize((n + blockSize - 1) / blockSize, 0);
+        this->arr = arr;
+
+        // Compute the sum of each block
+        for (int i = 0; i < n; ++i) {
+            blocks[i / blockSize] += arr[i];
+        }
+    }
+
+    // Function to update an element in the array
+    void update(int index, int value) {
+        int blockIndex = index / blockSize;
+        blocks[blockIndex] += value - arr[index];
+        arr[index] = value;
+    }
+
+    // Function to get the sum of elements in a range
+    int rangeSum(int left, int right) {
+        int sum = 0;
+        int startBlock = left / blockSize;
+        int endBlock = right / blockSize;
+
+        if (startBlock == endBlock) {
+            for (int i = left; i <= right; ++i) {
+                sum += arr[i];
+            }
+        } else {
+            for (int i = left; i < (startBlock + 1) * blockSize; ++i) {
+                sum += arr[i];
+            }
+            for (int i = startBlock + 1; i < endBlock; ++i) {
+                sum += blocks[i];
+            }
+            for (int i = endBlock * blockSize; i <= right; ++i) {
+                sum += arr[i];
+            }
+        }
+
+        return sum;
+    }
+
+private:
+    vector<int> arr;
+    vector<int> blocks;
+    int n;
+    int blockSize;
+};
+
+int main() {
+    vector<int> arr = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+    SqrtDecomposition sqrtDecomp(arr);
+
+    cout << "Sum of range [1, 5]: " << sqrtDecomp.rangeSum(1, 5) << endl;
+    sqrtDecomp.update(3, 10);
+    cout << "Sum of range [1, 5] after update: " << sqrtDecomp.rangeSum(1, 5) << endl;
+
+    return 0;
+}
+```
+
+#### Time and Space Complexity
+
+```markdown
+### Time and Space Complexity
+
+| Operation           | Time Complexity | Space Complexity |
+|---------------------|-----------------|------------------|
+| Update              | O(sqrt(n))      | O(n)             |
+| Range Sum Query     | O(sqrt(n))      | O(n)             |
+
+Where:
+- **n**: Number of elements in the array.
+
+```
+
+**Explanation:**
+- **Time Complexity**: 
+  - **Update**: O(sqrt(n)), as updating an element affects only one block, and the number of blocks is roughly sqrt(n).
+  - **Range Sum Query**: O(sqrt(n)), as the query might span multiple blocks but each block’s contribution is computed in constant time.
+  
+- **Space Complexity**: O(n), due to the storage of the original array and the block array.
+
+**Applications:**
+- **Efficient Data Queries**: Ideal for scenarios where frequent range queries and updates are required.
+- **Data Analysis**: Useful in applications where data needs to be analyzed quickly and efficiently, such as in real-time analytics and monitoring systems.
+
+Square Root Decomposition provides a balance between time efficiency and simplicity, making it suitable for applications where operations on large datasets need to be optimized for both queries and updates.
