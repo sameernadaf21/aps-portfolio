@@ -124,7 +124,6 @@ Balancing cost reduction with service level improvements. Handling dynamic chang
 - *Tree Structures*: 
   - *AVL Trees and Red Black Trees*: Efficient data storage and retrieval for route optimization.[code](./codes/7.md)
   - *Heap Implementation*: Priority queue for managing delivery schedules.)[code](./codes/8.md)
-  - *KD Tree*: Spatial search and nearest neighbor queries for route planning.
 
 ### 3. 🔄 *Supplier Relationship Management*
 
@@ -176,7 +175,6 @@ Identifying and assessing a wide range of potential risks. Developing effective 
 - *Risk Assessment Frameworks*: Evaluates potential risks and their impact on supply chains.
 - *Scenario Planning*: Develops and analyzes different scenarios to prepare for potential disruptions.
 - *Graph Algorithms*:
-  - *Boruvka's Algorithm*: Used for network design and minimizing connection costs.
   - *Ford-Fulkerson Algorithm*: Manages maximum flow problems in supply chains.[code](./codes/15.md)
   - *Union-Find Algorithms*: Helps in clustering and network reliability assessments.[code](./codes/16.md)
 
@@ -226,7 +224,7 @@ Achieving cross-functional collaboration. Balancing supply with shifting demand.
 
 #### STRATEGIES USED:
 - *Time Series Analysis*: For accurate demand forecasting.
-- *Pascal's Triangle*: For combinatorial analysis in decision-making.
+- *Pascal's Triangle*: For combinatorial analysis in decision-making.[code](./codes/11.md)
 - *Scenario Planning*: For preparing multiple operational scenarios.[code](./codes/22.md)
 
 ### 9. 🏭 *Manufacturing Resource Planning (MRP)*
@@ -323,7 +321,7 @@ Maintaining temperature control throughout the supply chain. Ensuring conformity
   - *Longest Common Substring*: For identifying optimal routes and schedules.[code](./codes/33.md)
 - *Heap Implementation*: For managing priorities in cold chain logistics.[code](./codes/8.md)
 - *Graph Algorithms*: 
-  - *Ford-Fulkerson Algorithm*: For optimizing cold storage and transportation.
+  - *Ford-Fulkerson Algorithm*: For optimizing cold storage and transportation.[code](./codes/15.md)
 
 ### 15. 🧮 *Cost Reduction and Efficiency Improvement*
 
@@ -337,7 +335,7 @@ Balancing cost reduction with service excellence. Identifying and removing ineff
 
 #### STRATEGIES USED:
 - *Dynamic Programming*: 
-  - *Rod Cutting Problem*: For optimizing resource usage and minimizing waste.
+  - *Rod Cutting Problem*: For optimizing resource usage and minimizing waste.[code](./codes/3.md)
 - *Query Range Problems*: 
   - *Square Root Decomposition*: For efficient data queries and analysis.[code](./codes/36.md)
 
@@ -352,11 +350,11 @@ Maintaining accurate customer data. Providing fast and excellent customer suppor
 
 #### STRATEGIES USED:
 - *Dynamic Programming*: 
-  - *Edit Distance Problem*: For comparing customer feedback and improving service quality.
+  - *Edit Distance Problem*: For comparing customer feedback and improving service quality.[code](./codes/26.md)
 - *Tree Structures*: 
-  - *Trie and Radix Tree*: For efficient customer data management.
+  - *Trie and Radix Tree*: For efficient customer data management.[code](./codes/32.md)
 - *Graph Algorithms*: 
-  - *DFS and BFS*: For analyzing customer interaction patterns.
+  - *DFS and BFS*: For analyzing customer interaction patterns.[code](./codes/21.md)
 
 ### 17. 🔍 *Supply Chain Transparency and Traceability*
 
@@ -384,11 +382,11 @@ Handling massive amounts of returns. Ensuring cost-effective reverse logistics o
 
 #### STRATEGIES USED:
 - *Dynamic Programming*: 
-  - *Subset Sum Problem*: For optimizing reverse logistics processes.
+  - *Subset Sum Problem*: For optimizing reverse logistics processes.[code](./codes/1.md)
 - *Graph Algorithms*: 
-  - *Kruskal's Implementation*: For designing efficient reverse logistics networks.
+  - *Kruskal's Implementation*: For designing efficient reverse logistics networks.[code](./codes/28.md)
 - *Query Range Problems*: 
-  - *Segment Trees*: For efficient management of returned product data.
+  - *Segment Trees*: For efficient management of returned product data.[code](./codes/13.md)
 
 ### 19. 🏗 *Capacity Planning*
 
@@ -400,11 +398,11 @@ Balancing capacity with shifting demand. Planning for future capacity demands. I
 
 #### STRATEGIES USED:
 - *Dynamic Programming*: 
-  - *Longest Common Subsequence*: For matching capacity with demand patterns.
+  - *Longest Common Subsequence*: For matching capacity with demand patterns.[code](./codes/4.md)
 - *Math Algorithms*: 
-  - *Catalan Numbers*: For combinatorial capacity planning.
+  - *Catalan Numbers*: For combinatorial capacity planning.[code](./codes/10.md)
 - *Tree Structures*: 
-  - *AVL Trees*: For efficient capacity data management.
+  - *AVL Trees*: For efficient capacity data management.[code](./codes/7.md)
 
 ### 20. 🌱 *Sustainable Packaging*
 
@@ -416,11 +414,11 @@ Balancing sustainability with cost and operational efficiency. Ensuring packagin
 
 #### STRATEGIES USED:
 - *Dynamic Programming*: 
-  - *Rod Cutting Problem*: For optimizing packaging material usage.
+  - *Rod Cutting Problem*: For optimizing packaging material usage.[code](./codes/3.md)
 - *Tree Structures*: 
   - *Heap Implementation*: For managing packaging priorities and schedules.[code](./codes/8.md)
 - *Principles*: 
-  - *Sliding Window*: For reducing packaging waste and optimizing usage.
+  - *Sliding Window*: For reducing packaging waste and optimizing usage.[code](./codes/18.md)
 
 ## References
 
