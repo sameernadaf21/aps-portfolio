@@ -268,7 +268,7 @@ Handling diverse regulations and trade policies. Managing long lead times and tr
 - *Dynamic Programming*: 
   - *Ways to Reach a Number*: For planning and optimizing global supply routes.[code](./codes/29.md)
 - *Graph Algorithms*: 
-  - *Union-Find Basic*: For managing complex international logistics networks.
+  - *Union-Find Basic*: For managing complex international logistics networks.[code](./codes/16.md)
 - *Query Range Problems*: 
   - *Look Up Table*: For efficient data retrieval and compliance checks.
 
