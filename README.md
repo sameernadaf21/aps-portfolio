@@ -222,9 +222,9 @@ Balancing inventory levels with production schedules. Minimizing production down
 
 #### STRATEGIES USED:
 - *Dynamic Programming*:
-  - *Rod Cutting Max Product*: For optimizing resource utilization.[code](./codes/24.md)
-- *Heap Implementation*: For efficient scheduling and priority management.
-- *Binomial Coefficients*: For production planning and lot sizing.
+  - *Rod Cutting Max Product*: For optimizing resource utilization.[code](./codes/23.md)
+- *Heap Implementation*: For efficient scheduling and priority management.[code](./codes/8.md)
+- *Binomial Coefficients*: For production planning and lot sizing.[code](./codes/24.md)
 
 ### 10. 💡 *Innovation and Technology Adoption*
 
@@ -237,9 +237,9 @@ Assessing the ROI of new technologies. Ensuring smooth integration with existing
 #### STRATEGIES USED:
 - *A Search**:
   - *Best First Search*: For exploring optimal technology solutions.
-  - *A with Priority Queue**: For project prioritization and resource allocation.
+  - *A with Priority Queue**: For project prioritization and resource allocation.[code](./codes/25.md)
 - *Dynamic Programming*: 
-  - *Edit Distance Problem*: For comparing and selecting the best technology options.
+  - *Edit Distance Problem*: For comparing and selecting the best technology options.[code](./codes/26.md)
 
 ### 11. 💻 *E-Commerce Supply Chain Management*
 
@@ -251,10 +251,10 @@ Handling high order volumes and returns. Ensuring fast and accurate order fulfil
 
 #### STRATEGIES USED:
 - *Dynamic Programming*: 
-  - *Minimum Number of Jumps*: For optimizing delivery routes.
-- *Heap Implementation*: For priority management in order processing.
+  - *Minimum Number of Jumps*: For optimizing delivery routes.[code](./codes/27.md)
+- *Heap Implementation*: For priority management in order processing.[code](./codes/8.md)
 - *Graph Algorithms*: 
-  - *Kruskal's Implementation*: For network optimization and cost reduction.
+  - *Kruskal's Implementation*: For network optimization and cost reduction.[code](./codes/28.md)
 
 ### 12. 🌐 *Global Supply Chain Management*
 
@@ -299,7 +299,7 @@ Maintaining temperature control throughout the supply chain. Ensuring compliance
 #### STRATEGIES USED:
 - *Dynamic Programming*: 
   - *Longest Common Substring*: For identifying optimal routes and schedules.
-- *Heap Implementation*: For managing priorities in cold chain logistics.
+- *Heap Implementation*: For managing priorities in cold chain logistics.[code](./codes/8.md)
 - *Graph Algorithms*: 
   - *Ford-Fulkerson Algorithm*: For optimizing cold storage and transportation.
 
@@ -395,7 +395,7 @@ Balancing sustainability with cost and operational efficiency. Ensuring packagin
 - *Dynamic Programming*: 
   - *Rod Cutting Problem*: For optimizing packaging material usage.
 - *Tree Structures*: 
-  - *Heap Implementation*: For managing packaging priorities and schedules.
+  - *Heap Implementation*: For managing packaging priorities and schedules.[code](./codes/8.md)
 - *Principles*: 
   - *Sliding Window*: For reducing packaging waste and optimizing usage.
 
