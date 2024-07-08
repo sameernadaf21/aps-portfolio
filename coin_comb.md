@@ -36,3 +36,14 @@ int main() {
     return 0;
 }
 ```
+### Time and Space Complexity
+
+| Operation          | Time Complexity   | Space Complexity  |
+|--------------------|-------------------|-------------------|
+| Initialization     | O(amount * n)     | O(amount)         |
+| Coin Calculation   | O(amount * n)     | O(amount)         |
+
+Where:
+- **n**: Number of coin denominations.
+- **amount**: Target amount to be achieved.
+
