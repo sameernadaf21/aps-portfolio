@@ -1,0 +1,126 @@
+### Kruskal’s Algorithm
+
+**Kruskal’s Algorithm** is used to find the Minimum Spanning Tree (MST) of a graph, which is a subset of edges that connects all vertices with the minimum total edge weight and without any cycles. It is widely used in network optimization and cost reduction scenarios.
+
+#### Overview
+
+- **Kruskal’s Algorithm** sorts all edges in the graph by their weight and adds them one by one to the MST, ensuring no cycles are formed, until the MST includes all vertices.
+
+#### C++ Code
+
+Here’s a C++ implementation of Kruskal’s Algorithm using the Union-Find data structure:
+
+```cpp
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+struct Edge {
+    int src, dest, weight;
+};
+
+// Union-Find Data Structure
+class DisjointSet {
+    vector<int> parent, rank;
+public:
+    DisjointSet(int n) {
+        parent.resize(n);
+        rank.resize(n, 0);
+        for (int i = 0; i < n; ++i) parent[i] = i;
+    }
+
+    int find(int u) {
+        if (parent[u] != u) {
+            parent[u] = find(parent[u]);
+        }
+        return parent[u];
+    }
+
+    void unionSet(int u, int v) {
+        int rootU = find(u);
+        int rootV = find(v);
+        if (rootU != rootV) {
+            if (rank[rootU] > rank[rootV]) {
+                parent[rootV] = rootU;
+            } else if (rank[rootU] < rank[rootV]) {
+                parent[rootU] = rootV;
+            } else {
+                parent[rootV] = rootU;
+                rank[rootU]++;
+            }
+        }
+    }
+};
+
+// Function to perform Kruskal's Algorithm
+vector<Edge> kruskalMST(int n, vector<Edge>& edges) {
+    sort(edges.begin(), edges.end(), [](const Edge& a, const Edge& b) {
+        return a.weight < b.weight;
+    });
+
+    DisjointSet ds(n);
+    vector<Edge> result;
+
+    for (const Edge& edge : edges) {
+        int u = edge.src;
+        int v = edge.dest;
+
+        if (ds.find(u) != ds.find(v)) {
+            ds.unionSet(u, v);
+            result.push_back(edge);
+        }
+    }
+
+    return result;
+}
+
+int main() {
+    int n = 4; // Number of vertices
+    vector<Edge> edges = {
+        {0, 1, 10},
+        {0, 2, 6},
+        {0, 3, 5},
+        {1, 3, 15},
+        {2, 3, 4}
+    };
+
+    vector<Edge> mst = kruskalMST(n, edges);
+
+    cout << "Edges in the Minimum Spanning Tree:" << endl;
+    for (const Edge& edge : mst) {
+        cout << edge.src << " - " << edge.dest << ": " << edge.weight << endl;
+    }
+
+    return 0;
+}
+```
+
+#### Time and Space Complexity
+
+```markdown
+### Time and Space Complexity
+
+| Operation             | Time Complexity | Space Complexity |
+|-----------------------|-----------------|------------------|
+| Sorting Edges         | O(E * log(E))   | O(E)             |
+| Union-Find Operations | O(E * α(V))     | O(V)             |
+| Overall               | O(E * log(E) + E * α(V)) | O(E + V)     |
+
+Where:
+- **E**: Number of edges in the graph.
+- **V**: Number of vertices in the graph.
+- **α(V)**: Inverse Ackermann function, which is nearly constant for practical values.
+
+```
+
+**Explanation:**
+- **Time Complexity**: O(E * log(E)) for sorting the edges and O(E * α(V)) for the Union-Find operations. The sorting operation dominates, so the overall time complexity is O(E * log(E)).
+- **Space Complexity**: O(E) for storing edges and O(V) for the Union-Find data structure.
+
+**Applications:**
+- **Network Optimization**: Kruskal’s Algorithm is used to design cost-effective networks, such as communication or utility networks.
+- **Cost Reduction**: Helps in minimizing the total cost of connecting nodes or facilities by ensuring the minimum total edge weight.
+
+Kruskal’s Algorithm is a powerful tool for solving network optimization problems, providing an efficient way to ensure minimal cost while connecting all vertices in a graph.
