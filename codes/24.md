@@ -1,0 +1,84 @@
+### Binomial Coefficients
+
+**Binomial Coefficients** are used in various combinatorial problems and are especially useful in production planning and lot sizing where combinations and allocations are required. They represent the number of ways to choose a subset of items from a larger set and are often denoted as \( C(n, k) \) or \( \binom{n}{k} \), where \( n \) is the total number of items, and \( k \) is the number of items to choose.
+
+#### Formula
+
+The binomial coefficient \( \binom{n}{k} \) is calculated using the formula:
+
+\[ \binom{n}{k} = \frac{n!}{k!(n - k)!} \]
+
+where \( ! \) denotes factorial.
+
+#### C++ Code for Binomial Coefficients
+
+Here’s a C++ implementation to calculate binomial coefficients using dynamic programming:
+
+```cpp
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+// Function to calculate binomial coefficients
+vector<vector<int>> binomialCoefficients(int n) {
+    vector<vector<int>> C(n + 1, vector<int>(n + 1, 0));
+
+    // Calculate binomial coefficients
+    for (int i = 0; i <= n; ++i) {
+        for (int j = 0; j <= i; ++j) {
+            if (j == 0 || j == i) {
+                C[i][j] = 1;
+            } else {
+                C[i][j] = C[i - 1][j - 1] + C[i - 1][j];
+            }
+        }
+    }
+
+    return C;
+}
+
+int main() {
+    int n = 5; // Example value for n
+
+    vector<vector<int>> C = binomialCoefficients(n);
+
+    cout << "Binomial coefficients for n = " << n << " are:" << endl;
+    for (int i = 0; i <= n; ++i) {
+        for (int j = 0; j <= i; ++j) {
+            cout << C[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
+```
+
+#### Time and Space Complexity
+
+
+| Operation             | Time Complexity | Space Complexity |
+|-----------------------|-----------------|------------------|
+| Binomial Coefficients Calculation | O(n^2)        | O(n^2)          |
+
+Where:
+- **n**: Maximum value for the number of items (rows in Pascal's Triangle).
+
+
+
+**Explanation:**
+
+- The `binomialCoefficients` function calculates the binomial coefficients using a 2D vector where `C[i][j]` stores the value of \( \binom{i}{j} \).
+- The algorithm fills out this table by using the recurrence relation:
+  \[
+  \binom{i}{j} = \binom{i-1}{j-1} + \binom{i-1}{j}
+  \]
+  with boundary conditions: \( \binom{i}{0} = \binom{i}{i} = 1 \).
+- This approach allows efficient computation of all binomial coefficients up to \( \binom{n}{n} \) with \( O(n^2) \) time and space complexity.
+
+**Applications:**
+- **Production Planning:** Helps in determining combinations of production runs or lots.
+- **Lot Sizing:** Useful in calculating the number of ways to choose items or allocate resources.
+
+Binomial coefficients are a fundamental concept in combinatorics and have wide applications in various fields including statistics, probability, and optimization problems.

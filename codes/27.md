@@ -1,0 +1,71 @@
+### Minimum Number of Jumps
+
+The **Minimum Number of Jumps** problem is used to find the minimum number of jumps required to reach the end of an array, where each element represents the maximum number of jumps that can be made from that position. This problem is useful for optimizing delivery routes or pathfinding in scenarios where each position or node has a constraint on the maximum distance that can be jumped.
+
+#### Problem Statement
+
+Given an array of positive integers where each element represents the maximum number of jumps that can be made from that position, find the minimum number of jumps required to reach the end of the array.
+
+#### C++ Code
+
+Here's a C++ implementation for the Minimum Number of Jumps problem:
+
+```cpp
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <climits>
+
+using namespace std;
+
+// Function to find the minimum number of jumps to reach the end
+int minJumps(const vector<int>& arr) {
+    int n = arr.size();
+    if (n <= 1) return 0;
+
+    // Initialize jumps array
+    vector<int> jumps(n, INT_MAX);
+    jumps[0] = 0;
+
+    // Compute minimum jumps required for each position
+    for (int i = 1; i < n; ++i) {
+        for (int j = 0; j < i; ++j) {
+            if (i <= j + arr[j] && jumps[j] != INT_MAX) {
+                jumps[i] = min(jumps[i], jumps[j] + 1);
+            }
+        }
+    }
+
+    return jumps[n - 1];
+}
+
+int main() {
+    vector<int> arr = {2, 3, 1, 1, 2, 4, 2, 0, 1, 1};
+    cout << "Minimum number of jumps to reach the end: " << minJumps(arr) << endl;
+    return 0;
+}
+```
+
+#### Time and Space Complexity
+
+```markdown
+### Time and Space Complexity
+
+| Operation             | Time Complexity | Space Complexity |
+|-----------------------|-----------------|------------------|
+| Minimum Jumps Calculation | O(n^2)        | O(n)             |
+
+Where:
+- **n**: Length of the array.
+
+```
+
+**Explanation:**
+- **Time Complexity**: O(n^2), as the algorithm uses a nested loop to calculate the minimum number of jumps for each position in the array.
+- **Space Complexity**: O(n), due to the storage required for the `jumps` array that holds the minimum number of jumps for each position.
+
+**Applications:**
+- **Optimizing Delivery Routes**: The algorithm can be used to determine the minimum number of stops or jumps needed to deliver packages efficiently.
+- **Pathfinding in Graphs**: Useful in scenarios where each node in the graph has constraints on how far it can reach, and we need to find the shortest path in terms of jumps.
+
+The Minimum Number of Jumps problem helps in optimizing routes and paths, making it a valuable technique for applications involving logistics and resource management.
