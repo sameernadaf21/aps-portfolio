@@ -148,9 +148,9 @@ Handling and analyzing large volumes of supply chain data. Integrating analytics
 - *Descriptive Analytics*: Analyzes historical data to understand past performance.
 - *Predictive Analytics*: Uses statistical models and machine learning to forecast future trends.
 - *Query Range Problems*:
-  - *Fenwick Tree / BIT*: Efficient range queries and updates in inventory systems.
-  - *Segment Trees*: Used for interval queries and range minimum/maximum.
-  - *Kadane's Algorithm*: Identifies maximum subarray sums for financial analysis.
+  - *Fenwick Tree / BIT*: Efficient range queries and updates in inventory systems.[code](./codes/12.md)
+  - *Segment Trees*: Used for interval queries and range minimum/maximum.[code](./codes/13.md)
+  - *Kadane's Algorithm*: Identifies maximum subarray sums for financial analysis.[code](./codes/14.md)
 
 ### 5. 🔒 *Supply Chain Risk Management*
 
