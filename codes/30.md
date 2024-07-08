@@ -1,0 +1,67 @@
+### Look Up Table
+
+A **Look Up Table (LUT)** is a data structure that allows for efficient data retrieval by mapping keys to values. It's commonly used for speeding up calculations and compliance checks by providing direct access to precomputed values.
+
+#### Overview
+
+A Look Up Table stores precomputed results or mappings, allowing for quick retrieval of values based on keys. This approach reduces the need for repeated calculations and can improve the efficiency of data retrieval operations.
+
+#### C++ Code
+
+Here’s a simple C++ implementation of a Look Up Table using a hash map:
+
+```cpp
+#include <iostream>
+#include <unordered_map>
+#include <string>
+
+using namespace std;
+
+// Function to create and use a Look Up Table
+void lookUpTableExample() {
+    unordered_map<string, int> lookUpTable;
+
+    // Populate the Look Up Table
+    lookUpTable["Alice"] = 30;
+    lookUpTable["Bob"] = 25;
+    lookUpTable["Charlie"] = 35;
+
+    // Query the Look Up Table
+    string name = "Bob";
+    if (lookUpTable.find(name) != lookUpTable.end()) {
+        cout << name << "'s age is " << lookUpTable[name] << endl;
+    } else {
+        cout << name << " not found in the table." << endl;
+    }
+}
+
+int main() {
+    lookUpTableExample();
+    return 0;
+}
+```
+
+#### Time and Space Complexity
+
+```markdown
+### Time and Space Complexity
+
+| Operation           | Time Complexity | Space Complexity |
+|---------------------|-----------------|------------------|
+| Look Up             | O(1)            | O(n)             |
+| Insertion           | O(1)            | O(n)             |
+
+Where:
+- **n**: Number of entries in the Look Up Table.
+
+```
+
+**Explanation:**
+- **Time Complexity**: O(1) for both look up and insertion operations on average due to the hash map's efficient access and insertion capabilities.
+- **Space Complexity**: O(n), where `n` is the number of entries in the Look Up Table, as each entry requires space.
+
+**Applications:**
+- **Efficient Data Retrieval**: Used for quick access to precomputed results, such as frequently accessed data or settings.
+- **Compliance Checks**: Helps in verifying compliance by quickly checking against precomputed compliance criteria or regulations.
+
+The Look Up Table is a fundamental data structure that optimizes the efficiency of data retrieval and operations by leveraging precomputed values, making it valuable for various applications in computing and data management.
