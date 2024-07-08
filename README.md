@@ -261,6 +261,8 @@ Supply chain analytics involves evaluating data to gain insights and drive decis
 
 3. **Query Range Problems**:
    - **Fenwick Tree / Binary Indexed Tree (BIT)**:
+  
+     <img align="center" src="./images/17.png" width="280">
      - **Description**: A Fenwick Tree or BIT is a data structure that provides efficient methods for cumulative frequency tables and range sum queries.
      - **Application**: In supply chain analytics, BIT can be used for efficient range queries and updates in inventory systems, such as quickly calculating the total inventory in a range of bins or updating inventory levels.
      - **Benefits**: Improves the efficiency of inventory management operations, allowing for quick and accurate data retrieval and updates.
