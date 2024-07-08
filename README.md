@@ -113,8 +113,8 @@ Optimizing logistics and transportation involves managing routes, reducing costs
 Balancing cost reduction with service level improvements. Handling dynamic changes in routes and transportation requirements. Integrating logistics optimization with real-time data for adaptive decision-making.
 
 #### STRATEGIES USED:
-- *Dijkstra's Shortest Path Algorithm*: Finds the shortest route for transportation.
-- *Vehicle Routing Problem (VRP)*: Optimizes vehicle routes for efficient delivery.
+- *Dijkstra's Shortest Path Algorithm*: Finds the shortest route for transportation.[Code](./Dijkstra.md)
+- *Vehicle Routing Problem (VRP)*: Optimizes vehicle routes for efficient delivery.[Code](./vrp.md)
 - *Tree Structures*: 
   - *AVL Trees and Red Black Trees*: Efficient data storage and retrieval for route optimization.[Code](./avl_red_black.md)
   - *Heap Implementation*: Priority queue for managing delivery schedules.[Code](./heap.md)
