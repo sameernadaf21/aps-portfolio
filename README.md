@@ -389,6 +389,8 @@ Developing and installing a Warehouse Management System (WMS) aims to streamline
 
 3. **Graph Algorithms**:
    - **Depth-First Search (DFS) and Breadth-First Search (BFS)**:
+  
+   <img align="center" src="./images/20.png" width="280">
      - **Description**: DFS and BFS are graph traversal algorithms used to explore nodes and edges in a graph.
      - **Application**: In a WMS, DFS and BFS can be used for efficient pathfinding and order picking. For example, DFS can help in finding the path to retrieve an item in a complex warehouse layout, while BFS can be used to find the shortest path for order picking and optimizing picking routes.
      - **Benefits**: Improves efficiency in pathfinding and order picking processes, leading to faster and more accurate fulfillment of warehouse orders.
