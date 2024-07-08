@@ -1,0 +1,82 @@
+### Union-Find
+
+**Union-Find** (also known as Disjoint Set Union, DSU) is a data structure used to manage a partition of a set into disjoint subsets. It supports two primary operations efficiently: finding the representative (or root) of a set and merging two sets.
+
+#### C++ Code
+
+```cpp
+#include <iostream>
+#include <vector>
+using namespace std;
+
+class UnionFind {
+    vector<int> parent;
+    vector<int> rank;
+
+public:
+    // Constructor
+    UnionFind(int size) {
+        parent.resize(size);
+        rank.resize(size, 0);
+        for (int i = 0; i < size; ++i) {
+            parent[i] = i;
+        }
+    }
+
+    // Find the representative of the set containing x
+    int find(int x) {
+        if (parent[x] != x) {
+            parent[x] = find(parent[x]); // Path compression
+        }
+        return parent[x];
+    }
+
+    // Union the sets containing x and y
+    void unionSets(int x, int y) {
+        int rootX = find(x);
+        int rootY = find(y);
+
+        if (rootX != rootY) {
+            // Union by rank
+            if (rank[rootX] > rank[rootY]) {
+                parent[rootY] = rootX;
+            } else if (rank[rootX] < rank[rootY]) {
+                parent[rootX] = rootY;
+            } else {
+                parent[rootY] = rootX;
+                rank[rootX]++;
+            }
+        }
+    }
+};
+
+int main() {
+    UnionFind uf(10);
+
+    uf.unionSets(1, 2);
+    uf.unionSets(2, 3);
+    uf.unionSets(4, 5);
+
+    cout << "Find(1): " << uf.find(1) << endl; // Output: 1
+    cout << "Find(3): " << uf.find(3) << endl; // Output: 1
+    cout << "Find(4): " << uf.find(4) << endl; // Output: 4
+
+    uf.unionSets(3, 4);
+
+    cout << "Find(5): " << uf.find(5) << endl; // Output: 4
+    cout << "Find(1): " << uf.find(1) << endl; // Output: 1
+
+    return 0;
+}
+```
+
+#### Time and Space Complexity
+
+| Operation          | Time Complexity   | Space Complexity  |
+|--------------------|-------------------|-------------------|
+| Find (with path compression) | O(α(n))    | O(n)              |
+| Union (with rank)  | O(α(n))           | O(n)              |
+
+Where:
+- **n**: Number of elements in the set.
+- **α(n)**: Inverse Ackermann function, which grows very slowly and is nearly constant for all practical purposes.
