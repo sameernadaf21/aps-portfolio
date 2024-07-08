@@ -266,7 +266,7 @@ Handling diverse regulations and trade policies. Managing long lead times and tr
 
 #### STRATEGIES USED:
 - *Dynamic Programming*: 
-  - *Ways to Reach a Number*: For planning and optimizing global supply routes.
+  - *Ways to Reach a Number*: For planning and optimizing global supply routes.[code](./codes/29.md)
 - *Graph Algorithms*: 
   - *Union-Find Basic*: For managing complex international logistics networks.
 - *Query Range Problems*: 
