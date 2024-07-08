@@ -102,7 +102,7 @@ Predicting demand accurately in the face of fluctuating market conditions. Balan
   - *Subset Sum Problem*: Helps determine optimal inventory levels.[Code](./subset_sum_problem.md)
   - *Coin Combinations*: Used for managing currency in inventory systems.[Code](./coin_comb.md)
   - *Rod Cutting Problem*: Optimizes stock lengths in manufacturing.[Code](./rod_cutting.md)
-  - *Longest Common Subsequence*: Helps in identifying common patterns in demand sequences.
+  - *Longest Common Subsequence*: Helps in identifying common patterns in demand sequences.[Code](./longest_common.md)
 
 ### 2. 🚚 *Logistics and Transportation Optimization*
 
