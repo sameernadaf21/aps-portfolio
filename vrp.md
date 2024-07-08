@@ -78,8 +78,6 @@ int main() {
 
 #### Time and Space Complexity
 
-```markdown
-### Time and Space Complexity
 
 | Operation           | Time Complexity           | Space Complexity  |
 |---------------------|---------------------------|-------------------|
@@ -88,7 +86,4 @@ int main() {
 
 Where:
 - **V**: Number of vertices (nodes/customers) in the graph.
-
-*Note:* The above code is a heuristic approach and does not guarantee the optimal solution. More advanced algorithms like Integer Linear Programming (ILP) or metaheuristic approaches (e.g., Genetic Algorithms, Simulated Annealing) can be used for more accurate results.
-```
 
