@@ -1,0 +1,50 @@
+## Longest Common Subsequence (LCS) Problem Code
+
+The Longest Common Subsequence (LCS) problem involves finding the longest subsequence common to two sequences. This problem is typically solved using dynamic programming.
+
+### C++ Code
+
+```cpp
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+int longestCommonSubsequence(string text1, string text2) {
+    int m = text1.length();
+    int n = text2.length();
+    vector<vector<int>> dp(m + 1, vector<int>(n + 1, 0));
+
+    for (int i = 1; i <= m; i++) {
+        for (int j = 1; j <= n; j++) {
+            if (text1[i - 1] == text2[j - 1]) {
+                dp[i][j] = dp[i - 1][j - 1] + 1;
+            } else {
+                dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]);
+            }
+        }
+    }
+
+    return dp[m][n];
+}
+
+int main() {
+    string text1 = "abcde";
+    string text2 = "ace";
+    cout << "Length of LCS: " << longestCommonSubsequence(text1, text2);
+    return 0;
+}
+```
+
+### Time and Space Complexity
+
+| Operation          | Time Complexity   | Space Complexity  |
+|--------------------|-------------------|-------------------|
+| Initialization     | O(m * n)          | O(m * n)          |
+| LCS Calculation    | O(m * n)          | O(m * n)          |
+
+Where:
+- **m**: Length of the first sequence.
+- **n**: Length of the second sequence.
+```
+
