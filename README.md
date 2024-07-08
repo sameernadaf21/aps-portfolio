@@ -305,10 +305,14 @@ Managing supply chain risks involves recognizing, assessing, and managing potent
 
 3. **Graph Algorithms**:
    - **Ford-Fulkerson Algorithm**:
+  
+     <img align="center" src="./images/18.png" width="280">
      - **Description**: The Ford-Fulkerson algorithm is used to solve the maximum flow problem in flow networks, which can be applied to supply chain logistics to determine the maximum possible flow through a network.
      - **Application**: In supply chain risk management, this algorithm helps in identifying bottlenecks and optimizing the flow of goods and resources through the supply chain network. For example, it can be used to ensure that critical supply routes have sufficient capacity to handle peak loads.
      - **Benefits**: Improves network efficiency by identifying and addressing bottlenecks, ensuring smooth flow of resources and minimizing disruptions.
    - **Union-Find Algorithms**:
+  
+     <img align="center" src="./images/19.png" width="280">
      - **Description**: Union-Find algorithms are used for clustering and managing disjoint sets, helping to analyze the connectivity and reliability of networks.
      - **Application**: These algorithms can be used to assess the reliability and connectivity of supply chain networks, such as determining how clusters of suppliers are connected and identifying potential vulnerabilities. For example, Union-Find algorithms can help in managing and analyzing supplier networks to assess risk concentrations and interdependencies.
      - **Benefits**: Enhances network reliability and resilience by identifying clusters and potential points of failure, allowing for better management of network risks.
