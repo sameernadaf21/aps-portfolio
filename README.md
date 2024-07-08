@@ -165,8 +165,8 @@ Identifying and assessing a wide range of potential risks. Developing effective 
 - *Scenario Planning*: Develops and analyzes different scenarios to prepare for potential disruptions.
 - *Graph Algorithms*:
   - *Boruvka's Algorithm*: Used for network design and minimizing connection costs.
-  - *Ford-Fulkerson Algorithm*: Manages maximum flow problems in supply chains.
-  - *Union-Find Algorithms*: Helps in clustering and network reliability assessments.
+  - *Ford-Fulkerson Algorithm*: Manages maximum flow problems in supply chains.[code](./codes/15.md)
+  - *Union-Find Algorithms*: Helps in clustering and network reliability assessments.[code](./codes/16.md)
 
 ### 6. 🌍 *Sustainable Supply Chain Management*
 
@@ -180,9 +180,9 @@ Balancing sustainability goals with cost and operational efficiency. Implementin
 - *Green Logistics*: Reduces environmental impact through efficient logistics practices.
 - *Circular Economy Models*: Promotes recycling and reuse within supply chains.
 - *Principles*:
-  - *Lazy Propagation*: Used for efficient updates in logistics and inventory systems.
-  - *Sliding Window*: Optimizes the use of resources and reduces waste.
-  - *Copy on Write*: Ensures efficient data management and reduces resource duplication.
+  - *Lazy Propagation*: Used for efficient updates in logistics and inventory systems.[code](./codes/17.md)
+  - *Sliding Window*: Optimizes the use of resources and reduces waste.[code](./codes/18.md)
+  - *Copy on Write*: Ensures efficient data management and reduces resource duplication.[code](./codes/19.md)
 
 ### 7. 🚀 *Warehouse Management System Implementation*
 
