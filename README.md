@@ -101,7 +101,7 @@ Predicting demand accurately in the face of fluctuating market conditions. Balan
 - *Dynamic Programming*: 
   - *Subset Sum Problem*: Helps determine optimal inventory levels.[code](./codes/1.md)
   - *Coin Combinations*: Used for managing currency in inventory systems.[code](./codes/2.md)
-  - *Rod Cutting Problem*: Optimizes stock lengths in manufacturing.
+  - *Rod Cutting Problem*: Optimizes stock lengths in manufacturing.[code](./codes/3.md)
   - *Longest Common Subsequence*: Helps in identifying common patterns in demand sequences.
 
 ### 2. 🚚 *Logistics and Transportation Optimization*
