@@ -154,7 +154,8 @@ Optimizing logistics and transportation involves controlling routes, decreasing 
 #### STRATEGIES USED:
 
 1. **Dijkstra's Shortest Path Algorithm**:
-   <img align="center" src="./images/10.png" width="180">
+   
+   <img align="center" src="./images/10.png" width="280">
    - **Description**: This algorithm finds the shortest path between nodes in a graph, which can represent locations and routes in a logistics network.
    - **Application**: Used to determine the most efficient routes for transportation, minimizing travel time and distance. For example, it can help a delivery company find the quickest route from the warehouse to the delivery point.
    - **Benefits**: Reduces travel costs and delivery times, improving overall logistics efficiency and customer satisfaction.
