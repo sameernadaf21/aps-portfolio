@@ -63,7 +63,7 @@ Supply chain management (SCM) is the active management of supply chain activitie
 - *Reference:* McKinsey & Company, "Risk, resilience, and rebalancing in global value chains," 2023.
   
 #### Data Analytics and Supply Chain Visibility
-<img align="right" src="./images/1.png" width="180">
+<img align="right" src="./images/6.png" width="180">
 - *Trend:* Leveraging big data and analytics to increase supply chain visibility and decision-making.
 - *Statistics:* According to a survey by Deloitte, 79% of companies with high-performing supply chains report revenue growth well above the industry average.
 - *Reference:* Deloitte, "The path to supply chain agility," 2023.
