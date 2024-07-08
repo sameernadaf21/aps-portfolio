@@ -132,9 +132,9 @@ Maintaining strong relationships while negotiating favorable terms. Evaluating a
 - *Supplier Scorecards*: Evaluates supplier performance based on key metrics.
 - *Contract Management Systems*: Manages and tracks contract obligations and compliance.
 - *Math Algorithms*:
-  - *Fermat's Little Theorem*: Used in cryptographic applications for secure communication with suppliers.
-  - *Catalan Numbers*: Helps in combinatorial optimization problems related to supplier selection.
-  - *Pascal's Triangle and Fibonacci Series*: Used for financial forecasting and inventory replenishment cycles.
+  - *Fermat's Little Theorem*: Used in cryptographic applications for secure communication with suppliers.[code](./codes/9.md)
+  - *Catalan Numbers*: Helps in combinatorial optimization problems related to supplier selection.[code](./codes/10.md)
+  - *Pascal's Triangle and Fibonacci Series*: Used for financial forecasting and inventory replenishment cycles.[code](./codes/11.md)
 
 ### 4. 📈 *Supply Chain Analytics*
 
