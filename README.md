@@ -193,11 +193,11 @@ Developing and implementing a Warehouse Management System (WMS) to streamline wa
 Ensuring seamless integration with existing systems. Training staff to use the new system effectively. Maintaining data accuracy and real-time visibility of inventory.
 
 #### STRATEGIES USED:
-- *AVL Trees*: For efficient database indexing and retrieval.
+- *AVL Trees*: For efficient database indexing and retrieval.[code](./codes/7.md)
 - *Dynamic Programming*: 
-  - *Stolen Value Problem*: Optimizes storage space and resource allocation.
+  - *Stolen Value Problem*: Optimizes storage space and resource allocation.[code](./codes/20.md)
 - *Graph Algorithms*: 
-  - *DFS and BFS*: For efficient pathfinding and order picking.
+  - *DFS and BFS*: For efficient pathfinding and order picking.[code](./codes/21.md)
 
 ### 8. 📊 *Sales and Operations Planning (S&OP)*
 
@@ -210,7 +210,7 @@ Achieving cross-functional collaboration. Balancing supply with fluctuating dema
 #### STRATEGIES USED:
 - *Time Series Analysis*: For accurate demand forecasting.
 - *Pascal's Triangle*: For combinatorial analysis in decision-making.
-- *Scenario Planning*: For preparing multiple operational scenarios.
+- *Scenario Planning*: For preparing multiple operational scenarios.[code](./codes/22.md)
 
 ### 9. 🏭 *Manufacturing Resource Planning (MRP)*
 
@@ -222,7 +222,7 @@ Balancing inventory levels with production schedules. Minimizing production down
 
 #### STRATEGIES USED:
 - *Dynamic Programming*:
-  - *Rod Cutting Max Product*: For optimizing resource utilization.
+  - *Rod Cutting Max Product*: For optimizing resource utilization.[code](./codes/24.md)
 - *Heap Implementation*: For efficient scheduling and priority management.
 - *Binomial Coefficients*: For production planning and lot sizing.
 
