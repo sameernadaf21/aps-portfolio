@@ -100,7 +100,7 @@ Predicting demand accurately in the face of fluctuating market conditions. Balan
 - *Regression Analysis*: Analyzes relationships between variables to forecast demand.
 - *Dynamic Programming*: 
   - *Subset Sum Problem*: Helps determine optimal inventory levels.[Code](./subset_sum_problem.md)
-  - *Coin Combinations*: Used for managing currency in inventory systems.
+  - *Coin Combinations*: Used for managing currency in inventory systems.[Code](./coin_comb.md)
   - *Rod Cutting Problem*: Optimizes stock lengths in manufacturing.
   - *Longest Common Subsequence*: Helps in identifying common patterns in demand sequences.
 
