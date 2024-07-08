@@ -45,3 +45,13 @@ int main() {
     return 0;
 }
 ```
+### Time and Space Complexity
+
+| Operation          | Time Complexity   | Space Complexity  |
+|--------------------|-------------------|-------------------|
+| Initialization     | O(n * sum)        | O(n * sum)        |
+| Subset Calculation | O(n * sum)        | O(n * sum)        |
+
+Where:
+- **n**: Number of elements in the set.
+- **sum**: Target sum to be achieved.
