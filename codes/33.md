@@ -1,0 +1,236 @@
+### Trie and Radix Tree
+
+**Trie** and **Radix Tree** are data structures used for efficient data indexing and retrieval. They are particularly useful for applications such as autocomplete, spell checking, and IP routing due to their ability to handle large sets of strings or keys efficiently.
+
+---
+
+### Trie
+
+A **Trie** (or prefix tree) is a tree-like data structure that stores strings in a way that allows for efficient retrieval of keys with a common prefix. Each node in a Trie represents a single character of the key, and the paths from the root to the leaves represent different keys.
+
+#### C++ Code
+
+Here’s a C++ implementation of a Trie:
+
+```cpp
+#include <iostream>
+#include <unordered_map>
+#include <string>
+
+using namespace std;
+
+// Define the structure for a Trie Node
+struct TrieNode {
+    unordered_map<char, TrieNode*> children;
+    bool isEndOfWord;
+
+    TrieNode() : isEndOfWord(false) {}
+};
+
+// Define the Trie class
+class Trie {
+public:
+    Trie() : root(new TrieNode()) {}
+
+    // Insert a key into the Trie
+    void insert(const string& key) {
+        TrieNode* node = root;
+        for (char c : key) {
+            if (node->children.find(c) == node->children.end()) {
+                node->children[c] = new TrieNode();
+            }
+            node = node->children[c];
+        }
+        node->isEndOfWord = true;
+    }
+
+    // Search for a key in the Trie
+    bool search(const string& key) {
+        TrieNode* node = root;
+        for (char c : key) {
+            if (node->children.find(c) == node->children.end()) {
+                return false;
+            }
+            node = node->children[c];
+        }
+        return node->isEndOfWord;
+    }
+
+private:
+    TrieNode* root;
+};
+
+int main() {
+    Trie trie;
+    trie.insert("hello");
+    trie.insert("world");
+
+    cout << "Searching for 'hello': " << (trie.search("hello") ? "Found" : "Not Found") << endl;
+    cout << "Searching for 'world': " << (trie.search("world") ? "Found" : "Not Found") << endl;
+    cout << "Searching for 'hell': " << (trie.search("hell") ? "Found" : "Not Found") << endl;
+
+    return 0;
+}
+```
+
+#### Time and Space Complexity
+
+```markdown
+### Time and Space Complexity
+
+| Operation      | Time Complexity | Space Complexity |
+|----------------|-----------------|------------------|
+| Insert         | O(m)             | O(m * n)         |
+| Search         | O(m)             | O(m * n)         |
+
+Where:
+- **m**: Length of the key.
+- **n**: Number of keys in the Trie.
+
+```
+
+**Explanation:**
+- **Time Complexity**: O(m) for both insert and search operations, where `m` is the length of the key. Each operation involves traversing the length of the key.
+- **Space Complexity**: O(m * n), where `n` is the number of keys and `m` is the average length of the keys. This is due to the storage needed for nodes in the Trie.
+
+**Applications:**
+- **Efficient Data Indexing**: Useful in scenarios where fast retrieval of strings or prefixes is required.
+- **Autocomplete and Spell Checking**: Supports efficient prefix matching.
+
+---
+
+### Radix Tree
+
+A **Radix Tree** (or Patricia Trie) is a compressed version of a Trie that stores common prefixes only once, which can save space and improve efficiency. Each edge represents a sequence of characters rather than a single character.
+
+#### C++ Code
+
+Here’s a C++ implementation of a basic Radix Tree:
+
+```cpp
+#include <iostream>
+#include <unordered_map>
+#include <string>
+
+using namespace std;
+
+// Define the structure for a Radix Tree Node
+struct RadixNode {
+    unordered_map<string, RadixNode*> children;
+    bool isEndOfWord;
+
+    RadixNode() : isEndOfWord(false) {}
+};
+
+// Define the Radix Tree class
+class RadixTree {
+public:
+    RadixTree() : root(new RadixNode()) {}
+
+    // Insert a key into the Radix Tree
+    void insert(const string& key) {
+        RadixNode* node = root;
+        size_t start = 0;
+        while (start < key.length()) {
+            auto it = node->children.lower_bound(string(1, key[start]));
+            if (it != node->children.end()) {
+                string commonPrefix = commonPrefix(it->first, key.substr(start));
+                if (commonPrefix.length() == it->first.length()) {
+                    node = it->second;
+                    start += it->first.length();
+                } else {
+                    RadixNode* splitNode = new RadixNode();
+                    splitNode->children[it->first.substr(commonPrefix.length())] = it->second;
+                    node->children[commonPrefix] = splitNode;
+                    node->children.erase(it);
+                    node = splitNode;
+                    start += commonPrefix.length();
+                    break;
+                }
+            } else {
+                node->children[key.substr(start)] = new RadixNode();
+                node->children[key.substr(start)]->isEndOfWord = true;
+                break;
+            }
+        }
+        node->isEndOfWord = true;
+    }
+
+    // Search for a key in the Radix Tree
+    bool search(const string& key) {
+        RadixNode* node = root;
+        size_t start = 0;
+        while (start < key.length()) {
+            auto it = node->children.lower_bound(string(1, key[start]));
+            if (it != node->children.end()) {
+                string commonPrefix = commonPrefix(it->first, key.substr(start));
+                if (commonPrefix.length() == it->first.length()) {
+                    node = it->second;
+                    start += it->first.length();
+                } else {
+                    return false;
+                }
+            } else {
+                return false;
+            }
+        }
+        return node->isEndOfWord;
+    }
+
+private:
+    RadixNode* root;
+
+    string commonPrefix(const string& a, const string& b) {
+        size_t length = min(a.length(), b.length());
+        for (size_t i = 0; i < length; ++i) {
+            if (a[i] != b[i]) {
+                return a.substr(0, i);
+            }
+        }
+        return a.substr(0, length);
+    }
+};
+
+int main() {
+    RadixTree radixTree;
+    radixTree.insert("hello");
+    radixTree.insert("hell");
+    radixTree.insert("world");
+
+    cout << "Searching for 'hello': " << (radixTree.search("hello") ? "Found" : "Not Found") << endl;
+    cout << "Searching for 'hell': " << (radixTree.search("hell") ? "Found" : "Not Found") << endl;
+    cout << "Searching for 'world': " << (radixTree.search("world") ? "Found" : "Not Found") << endl;
+
+    return 0;
+}
+```
+
+#### Time and Space Complexity
+
+```markdown
+### Time and Space Complexity
+
+| Operation       | Time Complexity | Space Complexity |
+|-----------------|-----------------|------------------|
+| Insert          | O(m)            | O(n * m)         |
+| Search          | O(m)            | O(n * m)         |
+
+Where:
+- **m**: Length of the key.
+- **n**: Number of keys in the Radix Tree.
+
+```
+
+**Explanation:**
+- **Time Complexity**: O(m) for both insert and search operations, where `m` is the length of the key. The complexity is dominated by the operations on the key length.
+- **Space Complexity**: O(n * m), where `n` is the number of keys and `m` is the average length of the keys. The space complexity is influenced by the storage of nodes and the keys.
+
+**Applications:**
+- **Efficient Data Indexing**: Handles large datasets with common prefixes efficiently.
+- **Data Compression**: Reduces the amount of storage required by compressing common prefixes.
+
+**Comparison**:
+- **Trie** is simpler and more straightforward but may use more space due to storing each character of the key.
+- **Radix Tree** is more space-efficient and compact as it compresses common prefixes but can be more complex to implement.
+
+Both Tries and Radix Trees are powerful tools for efficient data indexing and retrieval, making them valuable in various applications that require fast and scalable access to large datasets.
