@@ -50,14 +50,14 @@ Supply chain management (SCM) is the active management of supply chain activitie
 - *Reference:* Gartner, "Predicts 2023: Supply Chain Technology," 2023.
 
 #### Sustainability and Green Supply Chains
-<img align="right" src="./images/3.png" width="180">
+<img align="right" src="./images/4.png" width="180">
 - *Trend:* Increasing emphasis on sustainability and ecologically friendly methods throughout supply networks.
 - *Statistics:* The Carbon Disclosure Project (CDP) discovered that supply chains account for up to 5.5 times higher emissions than a company's direct operations.
 - *Reference:* Carbon Disclosure Project, "Supply Chain Report," 2023.
 
 
 #### Risk Management and Resilience
-
+<img align="right" src="./images/5.png" width="180">
 - *Trend:* Focus on establishing resilient supply chains that can survive interruptions.
 - *Statistics:* A McKinsey analysis reveals that supply chain interruptions cost organizations, on average, 45% of one year’s profits over the course of a decade.
 - *Reference:* McKinsey & Company, "Risk, resilience, and rebalancing in global value chains," 2023.
