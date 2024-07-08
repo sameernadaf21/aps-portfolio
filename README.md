@@ -44,13 +44,13 @@ Supply chain management (SCM) is the active management of supply chain activitie
 - *Reference:* DHL Global Connectedness Index 2023.
 
 #### Technology and Digital Transformation
-
+<img align="right" src="./images/2.png" width="180">
 - *Trend:* The integration of sophisticated technologies such as the Internet of Things (IoT), artificial intelligence (AI), and blockchain in supply chain processes.
 - *Statistics:* Gartner forecasts that 50% of global product-centric organizations will have invested in real-time transportation visibility technologies by 2024.
 - *Reference:* Gartner, "Predicts 2023: Supply Chain Technology," 2023.
 
 #### Sustainability and Green Supply Chains
-
+<img align="right" src="./images/3.png" width="180">
 - *Trend:* Increasing emphasis on sustainability and ecologically friendly methods throughout supply networks.
 - *Statistics:* The Carbon Disclosure Project (CDP) discovered that supply chains account for up to 5.5 times higher emissions than a company's direct operations.
 - *Reference:* Carbon Disclosure Project, "Supply Chain Report," 2023.
