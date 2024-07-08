@@ -117,7 +117,7 @@ Balancing cost reduction with service level improvements. Handling dynamic chang
 - *Vehicle Routing Problem (VRP)*: Optimizes vehicle routes for efficient delivery.
 - *Tree Structures*: 
   - *AVL Trees and Red Black Trees*: Efficient data storage and retrieval for route optimization.[Code](./avl_red_black.md)
-  - *Heap Implementation*: Priority queue for managing delivery schedules.
+  - *Heap Implementation*: Priority queue for managing delivery schedules.[Code](./heap.md)
   - *KD Tree*: Spatial search and nearest neighbor queries for route planning.
 
 ### 3. 🔄 *Supplier Relationship Management*
