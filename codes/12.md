@@ -1,0 +1,68 @@
+### Fenwick Tree (Binary Indexed Tree)
+
+**Fenwick Tree**, also known as Binary Indexed Tree (BIT), is a data structure that provides efficient methods for querying and updating prefix sums of an array. It is commonly used in competitive programming for its logarithmic time complexity for updates and prefix sum queries.
+
+#### C++ Code
+
+```cpp
+#include <iostream>
+#include <vector>
+using namespace std;
+
+class FenwickTree {
+    vector<int> tree;
+    int size;
+
+public:
+    // Constructor
+    FenwickTree(int n) : size(n) {
+        tree.assign(n + 1, 0); // Index 0 is unused
+    }
+
+    // Function to update the Fenwick Tree with value at index idx
+    void update(int idx, int value) {
+        while (idx <= size) {
+            tree[idx] += value;
+            idx += idx & -idx; // Move to the next index
+        }
+    }
+
+    // Function to get the prefix sum up to index idx
+    int query(int idx) {
+        int sum = 0;
+        while (idx > 0) {
+            sum += tree[idx];
+            idx -= idx & -idx; // Move to the parent index
+        }
+        return sum;
+    }
+};
+
+int main() {
+    int n = 10; // Size of the Fenwick Tree
+    FenwickTree fenwickTree(n);
+
+    // Example updates
+    fenwickTree.update(3, 5);
+    fenwickTree.update(7, 2);
+    fenwickTree.update(8, 3);
+
+    // Example queries
+    cout << "Sum of first 5 elements: " << fenwickTree.query(5) << endl;
+    cout << "Sum of first 8 elements: " << fenwickTree.query(8) << endl;
+
+    return 0;
+}
+```
+
+#### Time and Space Complexity
+
+| Operation       | Time Complexity | Space Complexity |
+|-----------------|-----------------|------------------|
+| Update          | O(log n)        | O(n)             |
+| Query           | O(log n)        | O(n)             |
+
+Where:
+- **n**: Number of elements in the Fenwick Tree.
+
+
