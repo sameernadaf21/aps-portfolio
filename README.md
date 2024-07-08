@@ -71,19 +71,19 @@ Supply chain management (SCM) is the active management of supply chain activitie
 ### Significant Developments and Innovations
 
 #### Blockchain for Transparency
-
+<img align="right" src="./images/7.png" width="180">
 - *Development:* Use of blockchain technology to promote transparency and traceability in supply networks.
 - *Example:* Walmart and IBM's Food Trust blockchain initiative has significantly reduced the time it takes to trace the origin of food from days to seconds.
 - *Reference:* Walmart, IBM Food Trust Case Study, 2023.
 
 #### AI and Machine Learning
-
+<img align="right" src="./images/8.png" width="180">
 - *Development:* Implementation of AI and machine learning for demand forecasting, inventory management, and predictive maintenance.
 - *Example:* Amazon uses machine learning algorithms to optimize its vast logistics network, resulting in a 25% reduction in fulfillment costs.
 - *Reference:* Amazon, "2023 Annual Report," 2023.
   
 #### IoT for Real-time Monitoring
-
+<img align="right" src="./images/9.png" width="180">
 - *Development:* Deployment of IoT devices for real-time monitoring of commodities, boosting supply chain visibility.
 - *Example:* Maersk's Remote Container Management system leverages IoT to monitor the condition of refrigerated containers in transit.
 - *Reference:* Maersk, "Remote Container Management," 2023.
