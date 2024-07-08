@@ -99,7 +99,7 @@ Predicting demand accurately in the face of fluctuating market conditions. Balan
 - *Time Series Analysis*: Predicts future demand based on historical data.
 - *Regression Analysis*: Analyzes relationships between variables to forecast demand.
 - *Dynamic Programming*: 
-  - *Subset Sum Problem*: Helps determine optimal inventory levels.[1] [Code](./subset_sum_problem.md)
+  - *Subset Sum Problem*: Helps determine optimal inventory levels.[Code](./subset_sum_problem.md)
   - *Coin Combinations*: Used for managing currency in inventory systems.
   - *Rod Cutting Problem*: Optimizes stock lengths in manufacturing.
   - *Longest Common Subsequence*: Helps in identifying common patterns in demand sequences.
