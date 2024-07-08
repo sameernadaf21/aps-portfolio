@@ -154,16 +154,17 @@ Optimizing logistics and transportation involves controlling routes, decreasing 
 #### STRATEGIES USED:
 
 1. **Dijkstra's Shortest Path Algorithm**:
+   <img align="center" src="./images/10.png" width="180">
    - **Description**: This algorithm finds the shortest path between nodes in a graph, which can represent locations and routes in a logistics network.
    - **Application**: Used to determine the most efficient routes for transportation, minimizing travel time and distance. For example, it can help a delivery company find the quickest route from the warehouse to the delivery point.
    - **Benefits**: Reduces travel costs and delivery times, improving overall logistics efficiency and customer satisfaction.
 
-2. **Vehicle Routing Problem (VRP)**:
+3. **Vehicle Routing Problem (VRP)**:
    - **Description**: VRP involves determining the optimal set of routes for a fleet of vehicles delivering to a set of locations, taking into account various constraints such as vehicle capacity and delivery time windows.
    - **Application**: Helps logistics companies plan efficient delivery routes that minimize total travel distance and time while meeting delivery constraints. For example, it can optimize the routes for a fleet of trucks delivering goods to multiple customers.
    - **Benefits**: Enhances route planning efficiency, reduces fuel consumption, lowers operational costs, and ensures timely deliveries.
 
-3. **Tree Structures**:
+4. **Tree Structures**:
    - **AVL Trees and Red-Black Trees**:
      - **Description**: These are types of self-balancing binary search trees that maintain sorted data, allowing for efficient data storage and retrieval.
      - **Application**: Used for storing and retrieving route information, ensuring quick access to route data and facilitating efficient route optimization. For instance, a logistics system can quickly find and update the best routes using these tree structures.
