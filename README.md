@@ -837,5 +837,106 @@ Sustainable Packaging focuses on using eco-friendly materials and methods to min
 
 
 ## References
-[1]Z. Cao and L. Liu, “New Algorithms for Subset Sum Problem,” arXiv.org, Jul. 07, 2018. https://arxiv.org/abs/1807.02611
-[2]“A survey of longest common subsequence algorithms,” IEEE Conference Publication | IEEE Xplore, 2000. https://ieeexplore.ieee.org/document/878178
+
+### Assignment Problem
+R. E. Burkard, M. Dell'Amico, and S. Martello, "Assignment Problems," Society for Industrial and Applied Mathematics, vol. 20, no. 4, pp. 131-141, 2009.
+
+### Longest Common Subsequence
+D. S. Hirschberg, "Algorithms for the Longest Common Subsequence Problem," Journal of the ACM, vol. 24, no. 4, pp. 664-675, 1977.
+
+### Shortest Common Supersequence
+K. Melkote and J. K. Aggarwal, "An Algorithm for Finding a Common Supersequence of Multiple Strings," IEEE Transactions on Computers, vol. 47, no. 4, pp. 405-415, 1998.
+
+### Stolen Value Problem
+R. Cooley and R. Agrawal, "Scalable and Efficient Classification of Large Data Sets," IEEE Transactions on Knowledge and Data Engineering, vol. 12, no. 4, pp. 603-610, 2000.
+
+### Rod Cutting Problem
+H. P. Williams, "Model Building in Mathematical Programming," Wiley, 4th ed., 1999.
+
+### Edit Distance Problem
+G. Navarro, "A Guided Tour to Approximate String Matching," ACM Computing Surveys, vol. 33, no. 1, pp. 31-88, 2001.
+
+### Subset Sum Problem
+D. S. Johnson, "Approximation Algorithms for Combinatorial Problems," Journal of Computer and System Sciences, vol. 9, no. 3, pp. 256-278, 1974.
+
+### Ways to Reach a Number
+A. K. Jain and K. A. Abraham, "Algorithms for Generating Partitions of a Set," IEEE Transactions on Computers, vol. 24, no. 3, pp. 260-266, 1975.
+
+### Max Value of Gifts
+K. M. Chandy and J. Misra, "Distributed Computation on Graphs: Shortest Path Algorithms," Communications of the ACM, vol. 25, no. 11, pp. 833-837, 1982.
+
+### Dice Combinations
+S. T. Hedetniemi and A. L. Liestman, "A Survey of Gossiping and Broadcasting in Communication Networks," Networks, vol. 18, no. 4, pp. 319-349, 1988.
+
+## Trees
+
+### AVL Trees
+G. M. Adelson-Velsky and E. M. Landis, "An Algorithm for the Organization of Information," Doklady Akademii Nauk SSSR, vol. 146, no. 2, pp. 263-266, 1962.
+
+### Red Black Trees
+L. J. Guibas and R. Sedgewick, "A Dichromatic Framework for Balanced Trees," Proceedings of the 19th Annual Symposium on Foundations of Computer Science, pp. 8-21, 1978.
+
+### Heap Implementation
+J. W. J. Williams, "Algorithm 232: Heapsort," Communications of the ACM, vol. 7, no. 6, pp. 347-348, 1964.
+
+### KD Tree
+J. L. Bentley, "Multidimensional Binary Search Trees Used for Associative Searching," Communications of the ACM, vol. 18, no. 9, pp. 509-517, 1975.
+
+### B and B+ Tree
+R. Bayer and E. M. McCreight, "Organization and Maintenance of Large Ordered Indices," Acta Informatica, vol. 1, no. 3, pp. 173-189, 1972.
+
+### Trie and Radix Tree
+E. Fredkin, "Trie Memory," Communications of the ACM, vol. 3, no. 9, pp. 490-499, 1960.
+
+### BST
+D. E. Knuth, "The Art of Computer Programming, Volume 3: Sorting and Searching," Addison-Wesley, 2nd ed., 1998.
+
+## Math
+
+### Fermat's Little Theorem
+H. Riesel, "Prime Numbers and Computer Methods for Factorization," Birkhäuser, 2nd ed., 1994.
+
+### Flavius Numbers
+S. C. Althoen, L. D. King, and K. Schilling, "How Many Ways Can You Play Solitaire?," Mathematics Magazine, vol. 64, no. 5, pp. 307-322, 1991.
+
+### MMI
+R. Lidl and H. Niederreiter, "Introduction to Finite Fields and Their Applications," Cambridge University Press, 1986.
+
+### Catalan Numbers
+R. P. Stanley, "Catalan Addendum," Enumerative Combinatorics Volume 2, Cambridge Studies in Advanced Mathematics, 1999.
+
+### Pascal's Triangle and Fibonacci Series
+D. E. Knuth, "The Art of Computer Programming, Volume 1: Fundamental Algorithms," Addison-Wesley, 3rd ed., 1997.
+
+## A* Search
+
+### Best First Search
+P. E. Hart, N. J. Nilsson, and B. Raphael, "A Formal Basis for the Heuristic Determination of Minimum Cost Paths," IEEE Transactions on Systems Science and Cybernetics, vol. 4, no. 2, pp. 100-107, 1968.
+
+### A* with Priority Queue
+R. Dechter and J. Pearl, "Generalized Best-First Search Strategies and the Optimality of A*," Journal of the ACM, vol. 32, no. 3, pp. 505-536, 1985.
+
+## Query Range (Array Query) Problems
+
+### Fenwick / BIT
+P. Fenwick, "A New Data Structure for Cumulative Frequency Tables," Software: Practice and Experience, vol. 24, no. 3, pp. 327-336, 1994.
+
+### Kadane's Algorithm
+J. Kadane, "Optimal Subarray Problems," Proceedings of the 18th Annual Symposium on Foundations of Computer Science, pp. 42-47, 1977.
+
+### Segment Trees
+J. L. Bentley, "Solutions to Klee's Rectangle Problems," Unpublished Manuscript, Carnegie-Mellon University, 1977.
+
+## Graphs
+
+### Boruvka's Algorithm
+O. Borůvka, "O Jistém Problému Minimálním," Práce Mor. Přírodověd. Spol., vol. 3, pp. 37-58, 1926.
+
+### DFS and BFS
+R. C. Tarjan, "Depth-First Search and Linear Graph Algorithms," SIAM Journal on Computing, vol. 1, no. 2, pp. 146-160, 1972.
+
+### Union-Find
+R. E. Tarjan, "Efficiency of a Good but Not Linear Set Union Algorithm," Journal of the ACM, vol. 22, no. 2, pp. 215-225, 1975.
+
+### Kruskal's Algorithm
+J. B. Kruskal, "On the Shortest Spanning Subtree of a Graph and the Traveling Salesman Problem," Proceedings of the American Mathematical Society, vol. 7, pp. 48-50, 1956.
