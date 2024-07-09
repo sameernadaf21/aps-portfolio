@@ -233,7 +233,7 @@ Managing supplier relationships entails reviewing supplier performance, negotiat
 ### CODE REFERENCES
 - [Fermat's Little Theorem](./codes/9.md)
 - [Catalan Numbers](./codes/10.md)
-- [Pascal's Triangle and Fibonacci Series](./codes/11.md)
+- [Pascal's Triangle and Fibonacci Series](./codes/44.md)
 
 
 
@@ -429,7 +429,7 @@ Implementing Sales and Operations Planning (S&OP) processes aims to align produc
    - **Benefits**: Enhances preparedness by evaluating different possible futures and developing strategies to address each scenario, improving flexibility and responsiveness in S&OP.
 
 ### CODE REFERENCES
-- [Pascal's Triangle](./codes/11.md)
+- [Pascal's Triangle](./codes/44.md)
 - [Scenario Planning](./codes/22.md)
 
 
